@@ -1,0 +1,357 @@
+{
+  "communities": {
+    "0": [
+      "accounty_tsconfig_compileroptions_esmoduleinterop",
+      "accounty_tsconfig_compileroptions_incremental",
+      "accounty_tsconfig_compileroptions_paths",
+      "accounty_tsconfig_compileroptions_plugins",
+      "accounty_tsconfig_compileroptions_resolvejsonmodule",
+      "accounty_tsconfig_paths",
+      "convex_tsconfig_compileroptions",
+      "convex_tsconfig_compileroptions_allowjs",
+      "convex_tsconfig_compileroptions_allowsyntheticdefaultimports",
+      "convex_tsconfig_compileroptions_forceconsistentcasinginfilenames",
+      "convex_tsconfig_compileroptions_isolatedmodules",
+      "convex_tsconfig_compileroptions_jsx",
+      "convex_tsconfig_compileroptions_lib",
+      "convex_tsconfig_compileroptions_module",
+      "convex_tsconfig_compileroptions_moduleresolution",
+      "convex_tsconfig_compileroptions_noemit",
+      "convex_tsconfig_compileroptions_skiplibcheck",
+      "convex_tsconfig_compileroptions_strict",
+      "convex_tsconfig_compileroptions_target",
+      "convex_tsconfig_compileroptions_types",
+      "convex_tsconfig_exclude",
+      "convex_tsconfig_include",
+      "tsconfig_json"
+    ],
+    "1": [
+      "ai_guidelines_action_guidelines",
+      "ai_guidelines_authentication_guidelines",
+      "ai_guidelines_codeblock_10",
+      "ai_guidelines_codeblock_11",
+      "ai_guidelines_codeblock_6",
+      "ai_guidelines_codeblock_7",
+      "ai_guidelines_codeblock_8",
+      "ai_guidelines_codeblock_9",
+      "ai_guidelines_convex_guidelines",
+      "ai_guidelines_cron_guidelines",
+      "ai_guidelines_file_storage_guidelines",
+      "ai_guidelines_full_text_search_guidelines",
+      "ai_guidelines_mutation_guidelines",
+      "ai_guidelines_ordering",
+      "ai_guidelines_query_guidelines",
+      "ai_guidelines_scheduling_guidelines",
+      "ai_guidelines_schema_guidelines",
+      "ai_guidelines_testing_guidelines",
+      "ai_guidelines_typescript_guidelines",
+      "convex_generated_ai_guidelines_md"
+    ],
+    "2": [
+      "accounty_package_dependencies",
+      "accounty_package_dependencies_clerk_nextjs",
+      "accounty_package_dependencies_clerk_react",
+      "accounty_package_dependencies_next",
+      "accounty_package_dependencies_react",
+      "accounty_package_dependencies_react_dom",
+      "accounty_package_dependencies_svix",
+      "accounty_package_name",
+      "accounty_package_private",
+      "accounty_package_scripts",
+      "accounty_package_scripts_build",
+      "accounty_package_scripts_dev",
+      "accounty_package_scripts_lint",
+      "accounty_package_scripts_start",
+      "accounty_package_version",
+      "package_json",
+      "skills_lock_json"
+    ],
+    "3": [
+      "convex_generated_api_d_ts",
+      "convex_generated_server_js",
+      "convex_http_http",
+      "convex_http_primaryemail",
+      "convex_http_svixid",
+      "convex_http_svixsignature",
+      "convex_http_svixtimestamp",
+      "convex_http_ts",
+      "convex_http_wh",
+      "convex_myfunctions_addnumber",
+      "convex_myfunctions_listnumbers",
+      "convex_myfunctions_myaction",
+      "convex_myfunctions_ts",
+      "convex_users_deletefromclerk",
+      "convex_users_ts",
+      "convex_users_upsertfromclerk"
+    ],
+    "4": [
+      "accounty_skills_lock_convex_computedhash",
+      "accounty_skills_lock_convex_skillpath",
+      "accounty_skills_lock_convex_source",
+      "accounty_skills_lock_convex_sourcetype",
+      "accounty_skills_lock_skills",
+      "accounty_skills_lock_skills_convex",
+      "accounty_skills_lock_skills_convex_create_component",
+      "accounty_skills_lock_skills_convex_migration_helper",
+      "accounty_skills_lock_skills_convex_performance_audit",
+      "accounty_skills_lock_skills_convex_quickstart",
+      "accounty_skills_lock_skills_convex_setup_auth",
+      "components_convexclientprovider_tsx"
+    ],
+    "5": [
+      "ai_guidelines_codeblock_1",
+      "ai_guidelines_codeblock_2",
+      "ai_guidelines_codeblock_3",
+      "ai_guidelines_codeblock_4",
+      "ai_guidelines_codeblock_5",
+      "ai_guidelines_function_calling",
+      "ai_guidelines_function_guidelines",
+      "ai_guidelines_function_references",
+      "ai_guidelines_function_registration",
+      "ai_guidelines_http_endpoint_syntax",
+      "ai_guidelines_pagination",
+      "ai_guidelines_validators"
+    ],
+    "6": [
+      "accounty_readme_codeblock_1",
+      "accounty_readme_codeblock_2",
+      "accounty_readme_get_started",
+      "accounty_readme_join_the_community",
+      "accounty_readme_learn_more",
+      "accounty_readme_welcome_to_your_convex_next_js_clerk_app",
+      "convex_readme_codeblock_1",
+      "convex_readme_codeblock_2",
+      "convex_readme_codeblock_4",
+      "convex_readme_welcome_to_your_convex_functions_directory",
+      "readme_md"
+    ],
+    "7": [
+      "app_page_content",
+      "app_page_home",
+      "app_page_resourcecard",
+      "app_page_signinform",
+      "app_page_tsx",
+      "app_server_inner_tsx",
+      "convex_generated_api_js",
+      "generated_api_components",
+      "server_page_serverpage",
+      "sign_in_page_signinpage",
+      "sign_up_page_signuppage"
+    ],
+    "8": [
+      "accounty_package_devdependencies",
+      "accounty_package_devdependencies_convex_dev_eslint_plugin",
+      "accounty_package_devdependencies_eslint",
+      "accounty_package_devdependencies_eslint_config_next",
+      "accounty_package_devdependencies_prettier",
+      "accounty_package_devdependencies_tailwindcss",
+      "accounty_package_devdependencies_tailwindcss_postcss",
+      "accounty_package_devdependencies_types_node",
+      "accounty_package_devdependencies_types_react",
+      "accounty_package_devdependencies_typescript"
+    ],
+    "9": [
+      "agents_convex",
+      "convex_auth_config",
+      "convex_generated_ai_guidelines",
+      "convex_generated_api",
+      "convex_generated_server",
+      "convex_http",
+      "convex_schema",
+      "readme_clerk"
+    ],
+    "10": [
+      "convex_generated_server_d_ts",
+      "generated_server_d_actionctx",
+      "generated_server_d_databasereader",
+      "generated_server_d_databasewriter",
+      "generated_server_d_mutationctx",
+      "generated_server_d_queryctx"
+    ],
+    "11": [
+      "app_layout_geistmono",
+      "app_layout_geistsans",
+      "app_layout_metadata",
+      "app_layout_rootlayout",
+      "app_layout_tsx"
+    ],
+    "12": [
+      "ai_ai_files_state_agentskillssha",
+      "ai_ai_files_state_agentsmdsectionhash",
+      "ai_ai_files_state_claudemdhash",
+      "ai_ai_files_state_guidelineshash",
+      "convex_generated_ai_ai_files_state_json"
+    ],
+    "13": [
+      "convex_generated_datamodel_d_ts",
+      "convex_schema_ts",
+      "generated_datamodel_d_doc",
+      "generated_datamodel_d_id",
+      "generated_datamodel_d_tablenames"
+    ],
+    "14": [
+      "accounty_proxy_config",
+      "accounty_proxy_isprotectedroute",
+      "postcss_config_mjs",
+      "proxy_ts"
+    ],
+    "15": [
+      "eslint_config_mjs"
+    ],
+    "16": [
+      "next_env_d_ts"
+    ],
+    "17": [
+      "next_config_ts"
+    ],
+    "18": [
+      "convex_auth_config_ts"
+    ],
+    "19": [
+      "agents_md"
+    ],
+    "20": [
+      "claude_md"
+    ],
+    "21": [
+      "readme_nextjs"
+    ]
+  },
+  "cohesion": {
+    "0": 0.09,
+    "1": 0.11,
+    "2": 0.12,
+    "3": 0.14,
+    "4": 0.47,
+    "5": 0.17,
+    "6": 0.18,
+    "7": 0.22,
+    "8": 0.2,
+    "9": 0.25,
+    "10": 0.33,
+    "11": 0.4,
+    "12": 0.4,
+    "13": 0.4,
+    "14": 0.5,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0
+  },
+  "gods": [
+    {
+      "id": "convex_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 19
+    },
+    {
+      "id": "ai_guidelines_convex_guidelines",
+      "label": "Convex guidelines",
+      "degree": 12
+    },
+    {
+      "id": "accounty_package_devdependencies",
+      "label": "devDependencies",
+      "degree": 10
+    },
+    {
+      "id": "accounty_package_dependencies",
+      "label": "dependencies",
+      "degree": 8
+    },
+    {
+      "id": "accounty_skills_lock_skills",
+      "label": "skills",
+      "degree": 7
+    },
+    {
+      "id": "accounty_skills_lock_skills_convex",
+      "label": "convex",
+      "degree": 7
+    },
+    {
+      "id": "ai_guidelines_function_guidelines",
+      "label": "Function guidelines",
+      "degree": 7
+    },
+    {
+      "id": "accounty_skills_lock_convex_source",
+      "label": "source",
+      "degree": 6
+    },
+    {
+      "id": "accounty_skills_lock_convex_sourcetype",
+      "label": "sourceType",
+      "degree": 6
+    },
+    {
+      "id": "accounty_skills_lock_convex_skillpath",
+      "label": "skillPath",
+      "degree": 6
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Clerk Authentication",
+      "target": "Convex Auth Configuration",
+      "source_files": [
+        "README.md",
+        "convex/auth.config.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "implements",
+      "why": "crosses file types (doc \u2194 code); connects across different repos/directories"
+    },
+    {
+      "source": "Convex Backend",
+      "target": "Convex AI Guidelines",
+      "source_files": [
+        "AGENTS.md",
+        "convex/_generated/ai/guidelines.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Convex Backend` unexpectedly reaches hub `Convex AI Guidelines`"
+    },
+    {
+      "source": "Convex AI Guidelines",
+      "target": "Convex HTTP Router",
+      "source_files": [
+        "convex/_generated/ai/guidelines.md",
+        "convex/http.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc \u2194 code); peripheral node `Convex HTTP Router` unexpectedly reaches hub `Convex AI Guidelines`"
+    },
+    {
+      "source": "Convex AI Guidelines",
+      "target": "Convex Schema",
+      "source_files": [
+        "convex/_generated/ai/guidelines.md",
+        "convex/schema.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc \u2194 code); peripheral node `Convex Schema` unexpectedly reaches hub `Convex AI Guidelines`"
+    },
+    {
+      "source": "Convex AI Guidelines",
+      "target": "Convex Auth Configuration",
+      "source_files": [
+        "convex/_generated/ai/guidelines.md",
+        "convex/auth.config.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc \u2194 code); peripheral node `Convex Auth Configuration` unexpectedly reaches hub `Convex AI Guidelines`"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

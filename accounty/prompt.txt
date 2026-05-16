@@ -1,0 +1,50 @@
+I'm going to be building a accounting B2B app in the style which is similar to QuickBooks. Below I have a rough feature spec sheet. 
+
+
+
+------
+
+
+
+we need to develop an MVP and we need to go ahead and implement things like clerk role based access control. you need to use clerk skills ..  We are also making sure that this is a B2B organization setup and we are using clerk to handle that. 
+
+
+
+------
+
+
+
+For all payment aspects, we'll be using clerk billing. use shad CN for a lot of the components and graphs to make things a lot more simple. It should be mobile responsive as well... 
+
+
+
+-------
+
+important:
+
+get benefit of GRAPH_REPORT.md and make sure always to use graphify hook install to auto-rebuild the graph after every git commit ... also make sure to use /graphify --update when it is needed to keep graphify  map always up-to-date so you can get the project structure from it ... cause my goal is to reduce tokens as much as possible...
+
+
+
+--------
+
+
+
+don't push anything to main until you create new branch for every new feature cause we will test it using codeRabbit then merge it with main branch...
+
+
+
+-----
+
+
+
+inside clerk i have'not created any org or subscription plan or billing .. you will be guiding me for every step including clerk-seat-based billing... i need 3 plans (free, pro, business) .. all i know is in business plan we can make: AI receipt scanning, unlimited everything , 
+
+
+
+-------
+
+
+
+for clerk RBAC : accountant can edit but viewer can read-only ... you can add any other role if needed
+
