@@ -100,6 +100,8 @@ http.route({
       }
 
       // ── Billing subscription events ────────────────────────────────────────
+      // Clerk fires subscription.updated with status "canceled"/"ended" — no
+      // separate canceled/ended event types exist in the WebhookEvent union.
     } else if (
       event.type === "subscription.created" ||
       event.type === "subscription.updated" ||
@@ -114,24 +116,23 @@ http.route({
       };
 
       const clerkOrgId = data.payer?.organization_id;
-      const planSlug = data.items?.[0]?.plan?.slug;
+      const terminalStatuses: SubStatus[] = ["canceled", "ended", "expired", "abandoned"];
 
-      if (clerkOrgId && isValidPlanSlug(planSlug)) {
-        await ctx.runMutation(internal.billing.syncSubscription, {
-          clerkOrgId,
+      if (clerkOrgId && terminalStatuses.includes(data.status)) {
+        await ctx.runMutation(internal.billing.cancelSubscription, {
           subscriptionId: data.id,
-          planSlug,
-          status: data.status,
         });
+      } else {
+        const planSlug = data.items?.[0]?.plan?.slug;
+        if (clerkOrgId && isValidPlanSlug(planSlug)) {
+          await ctx.runMutation(internal.billing.syncSubscription, {
+            clerkOrgId,
+            subscriptionId: data.id,
+            planSlug,
+            status: data.status,
+          });
+        }
       }
-    } else if (
-      event.type === "subscription.ended" ||
-      event.type === "subscription.canceled"
-    ) {
-      const data = event.data as { id: string };
-      await ctx.runMutation(internal.billing.cancelSubscription, {
-        subscriptionId: data.id,
-      });
     }
 
     return new Response(null, { status: 200 });
