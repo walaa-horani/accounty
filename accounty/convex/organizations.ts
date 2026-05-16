@@ -54,7 +54,12 @@ export const deleteFromClerk = internalMutation({
 export const getCurrentOrg = query({
   args: {},
   handler: async (ctx) => {
-    const { orgId } = await requireOrgMember(ctx);
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) return null;
+    const orgId = (identity as Record<string, unknown>).org_id as
+      | string
+      | undefined;
+    if (!orgId) return null;
     return await ctx.db
       .query("organizations")
       .withIndex("by_clerk_org_id", (q) => q.eq("clerkOrgId", orgId))
