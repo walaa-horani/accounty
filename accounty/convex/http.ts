@@ -1,4 +1,4 @@
-// NOTE: "use node" is not supported for Convex HTTP actions. 
+// NOTE: "use node" is not supported for Convex HTTP actions.
 // SVIX works in the default Convex runtime.
 
 import { httpRouter } from "convex/server";
@@ -58,6 +58,24 @@ http.route({
       if (data.id) {
         await ctx.runMutation(internal.users.deleteFromClerk, {
           clerkId: data.id,
+        });
+      }
+    } else if (
+      event.type === "organization.created" ||
+      event.type === "organization.updated"
+    ) {
+      const { data } = event;
+      await ctx.runMutation(internal.organizations.upsertFromClerk, {
+        clerkOrgId: data.id,
+        name: data.name,
+        slug: data.slug || undefined,
+        imageUrl: data.image_url || undefined,
+      });
+    } else if (event.type === "organization.deleted") {
+      const { data } = event;
+      if (data.id) {
+        await ctx.runMutation(internal.organizations.deleteFromClerk, {
+          clerkOrgId: data.id,
         });
       }
     }
