@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/c/dev/accounty/accounty/**)",
+      "Bash(pnpm list *)",
+      "Bash(node -e \"const c = require\\('@clerk/nextjs'\\); console.log\\(Object.keys\\(c\\).filter\\(k => k.toLowerCase\\(\\).includes\\('webhook'\\) || k.toLowerCase\\(\\).includes\\('event'\\)\\)\\)\")"
+    ]
+  }
+}
