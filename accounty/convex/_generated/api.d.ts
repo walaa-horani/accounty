@@ -8,8 +8,12 @@
  * @module
  */
 
+import type * as billing from "../billing.js";
 import type * as http from "../http.js";
+import type * as lib_planGate from "../lib/planGate.js";
+import type * as lib_withAuth from "../lib/withAuth.js";
 import type * as myFunctions from "../myFunctions.js";
+import type * as organizations from "../organizations.js";
 import type * as users from "../users.js";
 
 import type {
@@ -19,8 +23,12 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  billing: typeof billing;
   http: typeof http;
+  "lib/planGate": typeof lib_planGate;
+  "lib/withAuth": typeof lib_withAuth;
   myFunctions: typeof myFunctions;
+  organizations: typeof organizations;
   users: typeof users;
 }>;
 
