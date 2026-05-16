@@ -1,0 +1,3349 @@
+{
+  "nodes": [
+    {
+      "id": "eslint_config_mjs",
+      "label": "eslint.config.mjs",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "next_env_d_ts",
+      "label": "next-env.d.ts",
+      "file_type": "code",
+      "source_file": "next-env.d.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "next_config_ts",
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "accounty_next_config_nextconfig",
+      "label": "nextConfig",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "package_json",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "accounty_package_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "accounty_package_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "accounty_package_private",
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4"
+    },
+    {
+      "id": "accounty_package_scripts",
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5"
+    },
+    {
+      "id": "accounty_package_scripts_dev",
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "accounty_package_scripts_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7"
+    },
+    {
+      "id": "accounty_package_scripts_start",
+      "label": "start",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8"
+    },
+    {
+      "id": "accounty_package_scripts_lint",
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "accounty_package_dependencies",
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11"
+    },
+    {
+      "id": "accounty_package_dependencies_clerk_nextjs",
+      "label": "@clerk/nextjs",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "accounty_package_dependencies_clerk_react",
+      "label": "@clerk/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "accounty_package_dependencies_convex",
+      "label": "convex",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14"
+    },
+    {
+      "id": "accounty_package_dependencies_next",
+      "label": "next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15"
+    },
+    {
+      "id": "accounty_package_dependencies_react",
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "accounty_package_dependencies_react_dom",
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17"
+    },
+    {
+      "id": "accounty_package_dependencies_svix",
+      "label": "svix",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18"
+    },
+    {
+      "id": "accounty_package_devdependencies",
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "accounty_package_devdependencies_convex_dev_eslint_plugin",
+      "label": "@convex-dev/eslint-plugin",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21"
+    },
+    {
+      "id": "accounty_package_devdependencies_tailwindcss_postcss",
+      "label": "@tailwindcss/postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "accounty_package_devdependencies_types_node",
+      "label": "@types/node",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23"
+    },
+    {
+      "id": "accounty_package_devdependencies_types_react",
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24"
+    },
+    {
+      "id": "accounty_package_devdependencies_types_react_dom",
+      "label": "@types/react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25"
+    },
+    {
+      "id": "accounty_package_devdependencies_eslint",
+      "label": "eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L26"
+    },
+    {
+      "id": "accounty_package_devdependencies_eslint_config_next",
+      "label": "eslint-config-next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27"
+    },
+    {
+      "id": "accounty_package_devdependencies_prettier",
+      "label": "prettier",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28"
+    },
+    {
+      "id": "accounty_package_devdependencies_tailwindcss",
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L29"
+    },
+    {
+      "id": "accounty_package_devdependencies_typescript",
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30"
+    },
+    {
+      "id": "postcss_config_mjs",
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "accounty_postcss_config_config",
+      "label": "config",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "proxy_ts",
+      "label": "proxy.ts",
+      "file_type": "code",
+      "source_file": "proxy.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "accounty_proxy_isprotectedroute",
+      "label": "isProtectedRoute",
+      "file_type": "code",
+      "source_file": "proxy.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "accounty_proxy_config",
+      "label": "config",
+      "file_type": "code",
+      "source_file": "proxy.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "skills_lock_json",
+      "label": "skills-lock.json",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "accounty_skills_lock_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "accounty_skills_lock_skills",
+      "label": "skills",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "accounty_skills_lock_skills_convex",
+      "label": "convex",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L4"
+    },
+    {
+      "id": "accounty_skills_lock_convex_source",
+      "label": "source",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L5"
+    },
+    {
+      "id": "accounty_skills_lock_convex_sourcetype",
+      "label": "sourceType",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "accounty_skills_lock_convex_skillpath",
+      "label": "skillPath",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L7"
+    },
+    {
+      "id": "accounty_skills_lock_convex_computedhash",
+      "label": "computedHash",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L8"
+    },
+    {
+      "id": "accounty_skills_lock_skills_convex_create_component",
+      "label": "convex-create-component",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L10"
+    },
+    {
+      "id": "accounty_skills_lock_convex_create_component_source",
+      "label": "source",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L11"
+    },
+    {
+      "id": "accounty_skills_lock_convex_create_component_sourcetype",
+      "label": "sourceType",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "accounty_skills_lock_convex_create_component_skillpath",
+      "label": "skillPath",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "accounty_skills_lock_convex_create_component_computedhash",
+      "label": "computedHash",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L14"
+    },
+    {
+      "id": "accounty_skills_lock_skills_convex_migration_helper",
+      "label": "convex-migration-helper",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "accounty_skills_lock_convex_migration_helper_source",
+      "label": "source",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L17"
+    },
+    {
+      "id": "accounty_skills_lock_convex_migration_helper_sourcetype",
+      "label": "sourceType",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L18"
+    },
+    {
+      "id": "accounty_skills_lock_convex_migration_helper_skillpath",
+      "label": "skillPath",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L19"
+    },
+    {
+      "id": "accounty_skills_lock_convex_migration_helper_computedhash",
+      "label": "computedHash",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "accounty_skills_lock_skills_convex_performance_audit",
+      "label": "convex-performance-audit",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "accounty_skills_lock_convex_performance_audit_source",
+      "label": "source",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L23"
+    },
+    {
+      "id": "accounty_skills_lock_convex_performance_audit_sourcetype",
+      "label": "sourceType",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L24"
+    },
+    {
+      "id": "accounty_skills_lock_convex_performance_audit_skillpath",
+      "label": "skillPath",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L25"
+    },
+    {
+      "id": "accounty_skills_lock_convex_performance_audit_computedhash",
+      "label": "computedHash",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L26"
+    },
+    {
+      "id": "accounty_skills_lock_skills_convex_quickstart",
+      "label": "convex-quickstart",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L28"
+    },
+    {
+      "id": "accounty_skills_lock_convex_quickstart_source",
+      "label": "source",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L29"
+    },
+    {
+      "id": "accounty_skills_lock_convex_quickstart_sourcetype",
+      "label": "sourceType",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L30"
+    },
+    {
+      "id": "accounty_skills_lock_convex_quickstart_skillpath",
+      "label": "skillPath",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L31"
+    },
+    {
+      "id": "accounty_skills_lock_convex_quickstart_computedhash",
+      "label": "computedHash",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L32"
+    },
+    {
+      "id": "accounty_skills_lock_skills_convex_setup_auth",
+      "label": "convex-setup-auth",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L34"
+    },
+    {
+      "id": "accounty_skills_lock_convex_setup_auth_source",
+      "label": "source",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L35"
+    },
+    {
+      "id": "accounty_skills_lock_convex_setup_auth_sourcetype",
+      "label": "sourceType",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L36"
+    },
+    {
+      "id": "accounty_skills_lock_convex_setup_auth_skillpath",
+      "label": "skillPath",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L37"
+    },
+    {
+      "id": "accounty_skills_lock_convex_setup_auth_computedhash",
+      "label": "computedHash",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L38"
+    },
+    {
+      "id": "tsconfig_json",
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_target",
+      "label": "target",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_lib",
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L4"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_allowjs",
+      "label": "allowJs",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_skiplibcheck",
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L10"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_strict",
+      "label": "strict",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L11"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_noemit",
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_esmoduleinterop",
+      "label": "esModuleInterop",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_module",
+      "label": "module",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L14"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_moduleresolution",
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L15"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_resolvejsonmodule",
+      "label": "resolveJsonModule",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_isolatedmodules",
+      "label": "isolatedModules",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L17"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_jsx",
+      "label": "jsx",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L18"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_incremental",
+      "label": "incremental",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L19"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_plugins",
+      "label": "plugins",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "accounty_tsconfig_compileroptions_paths",
+      "label": "paths",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L25"
+    },
+    {
+      "id": "accounty_tsconfig_paths",
+      "label": "@/*",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L26"
+    },
+    {
+      "id": "accounty_tsconfig_include",
+      "label": "include",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L31"
+    },
+    {
+      "id": "accounty_tsconfig_exclude",
+      "label": "exclude",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L38"
+    },
+    {
+      "id": "app_layout_tsx",
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_layout_geistsans",
+      "label": "geistSans",
+      "file_type": "code",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "app_layout_geistmono",
+      "label": "geistMono",
+      "file_type": "code",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "app_layout_metadata",
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "app_layout_rootlayout",
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L25"
+    },
+    {
+      "id": "app_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_page_home",
+      "label": "Home()",
+      "file_type": "code",
+      "source_file": "app\\page.tsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "app_page_signinform",
+      "label": "SignInForm()",
+      "file_type": "code",
+      "source_file": "app\\page.tsx",
+      "source_location": "L37"
+    },
+    {
+      "id": "app_page_content",
+      "label": "Content()",
+      "file_type": "code",
+      "source_file": "app\\page.tsx",
+      "source_location": "L55"
+    },
+    {
+      "id": "app_page_resourcecard",
+      "label": "ResourceCard()",
+      "file_type": "code",
+      "source_file": "app\\page.tsx",
+      "source_location": "L149"
+    },
+    {
+      "id": "app_server_inner_tsx",
+      "label": "inner.tsx",
+      "file_type": "code",
+      "source_file": "app\\server\\inner.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_inner_home",
+      "label": "Home()",
+      "file_type": "code",
+      "source_file": "app\\server\\inner.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "app_server_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\server\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_page_serverpage",
+      "label": "ServerPage()",
+      "file_type": "code",
+      "source_file": "app\\server\\page.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "app_sign_in_sign_in_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\sign-in\\[[...sign-in]]\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "sign_in_page_signinpage",
+      "label": "SignInPage()",
+      "file_type": "code",
+      "source_file": "app\\sign-in\\[[...sign-in]]\\page.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "app_sign_up_sign_up_page_tsx",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app\\sign-up\\[[...sign-up]]\\page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "sign_up_page_signuppage",
+      "label": "SignUpPage()",
+      "file_type": "code",
+      "source_file": "app\\sign-up\\[[...sign-up]]\\page.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "components_convexclientprovider_tsx",
+      "label": "ConvexClientProvider.tsx",
+      "file_type": "code",
+      "source_file": "components\\ConvexClientProvider.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_convexclientprovider_convex",
+      "label": "convex",
+      "file_type": "code",
+      "source_file": "components\\ConvexClientProvider.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "components_convexclientprovider_convexclientprovider",
+      "label": "ConvexClientProvider()",
+      "file_type": "code",
+      "source_file": "components\\ConvexClientProvider.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "convex_auth_config_ts",
+      "label": "auth.config.ts",
+      "file_type": "code",
+      "source_file": "convex\\auth.config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "convex_http_ts",
+      "label": "http.ts",
+      "file_type": "code",
+      "source_file": "convex\\http.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "convex_http_http",
+      "label": "http",
+      "file_type": "code",
+      "source_file": "convex\\http.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "convex_http_svixid",
+      "label": "svixId",
+      "file_type": "code",
+      "source_file": "convex\\http.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "convex_http_svixtimestamp",
+      "label": "svixTimestamp",
+      "file_type": "code",
+      "source_file": "convex\\http.ts",
+      "source_location": "L22"
+    },
+    {
+      "id": "convex_http_svixsignature",
+      "label": "svixSignature",
+      "file_type": "code",
+      "source_file": "convex\\http.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "convex_http_wh",
+      "label": "wh",
+      "file_type": "code",
+      "source_file": "convex\\http.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "convex_http_primaryemail",
+      "label": "primaryEmail",
+      "file_type": "code",
+      "source_file": "convex\\http.ts",
+      "source_location": "L45"
+    },
+    {
+      "id": "convex_myfunctions_ts",
+      "label": "myFunctions.ts",
+      "file_type": "code",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "convex_myfunctions_listnumbers",
+      "label": "listNumbers",
+      "file_type": "code",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "convex_myfunctions_addnumber",
+      "label": "addNumber",
+      "file_type": "code",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L32"
+    },
+    {
+      "id": "convex_myfunctions_myaction",
+      "label": "myAction",
+      "file_type": "code",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L53"
+    },
+    {
+      "id": "convex_schema_ts",
+      "label": "schema.ts",
+      "file_type": "code",
+      "source_file": "convex\\schema.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "convex_tsconfig_json",
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_allowjs",
+      "label": "allowJs",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L8"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_strict",
+      "label": "strict",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_moduleresolution",
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L10"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_jsx",
+      "label": "jsx",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L11"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_skiplibcheck",
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_allowsyntheticdefaultimports",
+      "label": "allowSyntheticDefaultImports",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_target",
+      "label": "target",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_lib",
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L17"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_types",
+      "label": "types",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L18"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_forceconsistentcasinginfilenames",
+      "label": "forceConsistentCasingInFileNames",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L19"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_module",
+      "label": "module",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_isolatedmodules",
+      "label": "isolatedModules",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L21"
+    },
+    {
+      "id": "convex_tsconfig_compileroptions_noemit",
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "convex_tsconfig_include",
+      "label": "include",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L24"
+    },
+    {
+      "id": "convex_tsconfig_exclude",
+      "label": "exclude",
+      "file_type": "code",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L25"
+    },
+    {
+      "id": "convex_users_ts",
+      "label": "users.ts",
+      "file_type": "code",
+      "source_file": "convex\\users.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "convex_users_upsertfromclerk",
+      "label": "upsertFromClerk",
+      "file_type": "code",
+      "source_file": "convex\\users.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "convex_users_deletefromclerk",
+      "label": "deleteFromClerk",
+      "file_type": "code",
+      "source_file": "convex\\users.ts",
+      "source_location": "L34"
+    },
+    {
+      "id": "convex_generated_api_d_ts",
+      "label": "api.d.ts",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\api.d.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "convex_generated_api_js",
+      "label": "api.js",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\api.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "generated_api_components",
+      "label": "components",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\api.js",
+      "source_location": "L23"
+    },
+    {
+      "id": "convex_generated_datamodel_d_ts",
+      "label": "dataModel.d.ts",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\dataModel.d.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "generated_datamodel_d_tablenames",
+      "label": "TableNames",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\dataModel.d.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "generated_datamodel_d_doc",
+      "label": "Doc",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\dataModel.d.ts",
+      "source_location": "L30"
+    },
+    {
+      "id": "generated_datamodel_d_id",
+      "label": "Id",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\dataModel.d.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "generated_datamodel_d_datamodel",
+      "label": "DataModel",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\dataModel.d.ts",
+      "source_location": "L60"
+    },
+    {
+      "id": "convex_generated_server_d_ts",
+      "label": "server.d.ts",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "generated_server_d_queryctx",
+      "label": "QueryCtx",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L107"
+    },
+    {
+      "id": "generated_server_d_mutationctx",
+      "label": "MutationCtx",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L115"
+    },
+    {
+      "id": "generated_server_d_actionctx",
+      "label": "ActionCtx",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L123"
+    },
+    {
+      "id": "generated_server_d_databasereader",
+      "label": "DatabaseReader",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L132"
+    },
+    {
+      "id": "generated_server_d_databasewriter",
+      "label": "DatabaseWriter",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L143"
+    },
+    {
+      "id": "convex_generated_server_js",
+      "label": "server.js",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\server.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "convex_generated_ai_ai_files_state_json",
+      "label": "ai-files.state.json",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\ai\\ai-files.state.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "ai_ai_files_state_guidelineshash",
+      "label": "guidelinesHash",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\ai\\ai-files.state.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "ai_ai_files_state_agentsmdsectionhash",
+      "label": "agentsMdSectionHash",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\ai\\ai-files.state.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "ai_ai_files_state_claudemdhash",
+      "label": "claudeMdHash",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\ai\\ai-files.state.json",
+      "source_location": "L4"
+    },
+    {
+      "id": "ai_ai_files_state_agentskillssha",
+      "label": "agentSkillsSha",
+      "file_type": "code",
+      "source_file": "convex\\_generated\\ai\\ai-files.state.json",
+      "source_location": "L5"
+    }
+  ],
+  "edges": [
+    {
+      "source": "eslint_config_mjs",
+      "target": "config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "eslint_config_mjs",
+      "target": "core_web_vitals",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "eslint_config_mjs",
+      "target": "typescript",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "eslint_config_mjs",
+      "target": "eslint_plugin",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "next_env_d_ts",
+      "target": "c_dev_accounty_accounty_next_types_routes_d_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "next-env.d.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "next_config_ts",
+      "target": "next",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "next.config.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "next_config_ts",
+      "target": "accounty_next_config_nextconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "next.config.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "package_json",
+      "target": "accounty_package_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "package_json",
+      "target": "accounty_package_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "package_json",
+      "target": "accounty_package_private",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "package_json",
+      "target": "accounty_package_scripts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_scripts",
+      "target": "accounty_package_scripts_dev",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_scripts",
+      "target": "accounty_package_scripts_build",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_scripts",
+      "target": "accounty_package_scripts_start",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_scripts",
+      "target": "accounty_package_scripts_lint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "package_json",
+      "target": "accounty_package_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_clerk_nextjs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_dependencies_clerk_nextjs",
+      "target": "clerk_nextjs",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_clerk_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_dependencies_clerk_react",
+      "target": "clerk_react",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_convex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_dependencies_convex",
+      "target": "convex",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_next",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_dependencies_next",
+      "target": "next",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_dependencies_react",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_react_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_dependencies_react_dom",
+      "target": "react_dom",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_svix",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_dependencies_svix",
+      "target": "svix",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "package_json",
+      "target": "accounty_package_devdependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_convex_dev_eslint_plugin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_devdependencies_convex_dev_eslint_plugin",
+      "target": "convex_dev_eslint_plugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_tailwindcss_postcss",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_devdependencies_tailwindcss_postcss",
+      "target": "tailwindcss_postcss",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_types_node",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_devdependencies_types_node",
+      "target": "types_node",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_types_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_devdependencies_types_react",
+      "target": "types_react",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_types_react_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_devdependencies_types_react_dom",
+      "target": "types_react_dom",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_eslint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_devdependencies_eslint",
+      "target": "eslint",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_eslint_config_next",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_devdependencies_eslint_config_next",
+      "target": "eslint_config_next",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_prettier",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_devdependencies_prettier",
+      "target": "prettier",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_tailwindcss",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_devdependencies_tailwindcss",
+      "target": "tailwindcss",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_typescript",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_package_devdependencies_typescript",
+      "target": "typescript",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "postcss_config_mjs",
+      "target": "accounty_postcss_config_config",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "proxy_ts",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "proxy.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "proxy_ts",
+      "target": "accounty_proxy_isprotectedroute",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "proxy.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "proxy_ts",
+      "target": "accounty_proxy_config",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "proxy.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_lock_json",
+      "target": "accounty_skills_lock_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "skills_lock_json",
+      "target": "accounty_skills_lock_skills",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills",
+      "target": "accounty_skills_lock_skills_convex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex",
+      "target": "accounty_skills_lock_convex_source",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex",
+      "target": "accounty_skills_lock_convex_sourcetype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex",
+      "target": "accounty_skills_lock_convex_skillpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex",
+      "target": "accounty_skills_lock_convex_computedhash",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills",
+      "target": "accounty_skills_lock_skills_convex_create_component",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_create_component",
+      "target": "accounty_skills_lock_convex_create_component_source",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_create_component",
+      "target": "accounty_skills_lock_convex_create_component_sourcetype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_create_component",
+      "target": "accounty_skills_lock_convex_create_component_skillpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_create_component",
+      "target": "accounty_skills_lock_convex_create_component_computedhash",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills",
+      "target": "accounty_skills_lock_skills_convex_migration_helper",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_migration_helper",
+      "target": "accounty_skills_lock_convex_migration_helper_source",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_migration_helper",
+      "target": "accounty_skills_lock_convex_migration_helper_sourcetype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_migration_helper",
+      "target": "accounty_skills_lock_convex_migration_helper_skillpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_migration_helper",
+      "target": "accounty_skills_lock_convex_migration_helper_computedhash",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills",
+      "target": "accounty_skills_lock_skills_convex_performance_audit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_performance_audit",
+      "target": "accounty_skills_lock_convex_performance_audit_source",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_performance_audit",
+      "target": "accounty_skills_lock_convex_performance_audit_sourcetype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_performance_audit",
+      "target": "accounty_skills_lock_convex_performance_audit_skillpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_performance_audit",
+      "target": "accounty_skills_lock_convex_performance_audit_computedhash",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills",
+      "target": "accounty_skills_lock_skills_convex_quickstart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_quickstart",
+      "target": "accounty_skills_lock_convex_quickstart_source",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_quickstart",
+      "target": "accounty_skills_lock_convex_quickstart_sourcetype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_quickstart",
+      "target": "accounty_skills_lock_convex_quickstart_skillpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_quickstart",
+      "target": "accounty_skills_lock_convex_quickstart_computedhash",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills",
+      "target": "accounty_skills_lock_skills_convex_setup_auth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_setup_auth",
+      "target": "accounty_skills_lock_convex_setup_auth_source",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_setup_auth",
+      "target": "accounty_skills_lock_convex_setup_auth_sourcetype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_setup_auth",
+      "target": "accounty_skills_lock_convex_setup_auth_skillpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_skills_lock_skills_convex_setup_auth",
+      "target": "accounty_skills_lock_convex_setup_auth_computedhash",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "tsconfig_json",
+      "target": "accounty_tsconfig_compileroptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_target",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_lib",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions_lib",
+      "target": "ref_dom",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions_lib",
+      "target": "ref_dom_iterable",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions_lib",
+      "target": "ref_esnext",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_allowjs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_skiplibcheck",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_strict",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_noemit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_esmoduleinterop",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_module",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_moduleresolution",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_resolvejsonmodule",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_isolatedmodules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_jsx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_incremental",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_plugins",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_paths",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_compileroptions_paths",
+      "target": "accounty_tsconfig_paths",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_paths",
+      "target": "ref",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "tsconfig_json",
+      "target": "accounty_tsconfig_include",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_include",
+      "target": "ref_next_env_d_ts",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_tsconfig_include",
+      "target": "ref_ts",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_tsconfig_include",
+      "target": "ref_tsx",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_tsconfig_include",
+      "target": "ref_next_types_ts",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "accounty_tsconfig_include",
+      "target": "ref_next_dev_types_ts",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "tsconfig_json",
+      "target": "accounty_tsconfig_exclude",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "accounty_tsconfig_exclude",
+      "target": "ref_node_modules",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "next",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "google",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "c_dev_accounty_accounty_app_globals_css",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "components_convexclientprovider_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "nextjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "app_layout_geistsans",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "app_layout_geistmono",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "app_layout_metadata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "app_layout_tsx",
+      "target": "app_layout_rootlayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\layout.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "convex_generated_api_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "generated_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "link",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "nextjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "nextjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "nextjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "app_page_home",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "app_page_signinform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "app_page_content",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_tsx",
+      "target": "app_page_resourcecard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\page.tsx",
+      "source_location": "L149",
+      "weight": 1.0
+    },
+    {
+      "source": "app_server_inner_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\server\\inner.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_server_inner_tsx",
+      "target": "convex_generated_api_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\server\\inner.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_server_inner_tsx",
+      "target": "generated_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\server\\inner.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_server_inner_tsx",
+      "target": "server_inner_home",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\server\\inner.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_server_page_tsx",
+      "target": "app_server_inner_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\server\\page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_server_page_tsx",
+      "target": "nextjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\server\\page.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_server_page_tsx",
+      "target": "convex_generated_api_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\server\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_server_page_tsx",
+      "target": "generated_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\server\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_server_page_tsx",
+      "target": "server_page_serverpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\server\\page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_sign_in_sign_in_page_tsx",
+      "target": "nextjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\sign-in\\[[...sign-in]]\\page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_sign_in_sign_in_page_tsx",
+      "target": "sign_in_page_signinpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\sign-in\\[[...sign-in]]\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_sign_up_sign_up_page_tsx",
+      "target": "nextjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\sign-up\\[[...sign-up]]\\page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_sign_up_sign_up_page_tsx",
+      "target": "sign_up_page_signuppage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\sign-up\\[[...sign-up]]\\page.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "components_convexclientprovider_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components\\ConvexClientProvider.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "components_convexclientprovider_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components\\ConvexClientProvider.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "components_convexclientprovider_tsx",
+      "target": "react_clerk",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components\\ConvexClientProvider.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "components_convexclientprovider_tsx",
+      "target": "nextjs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components\\ConvexClientProvider.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "components_convexclientprovider_tsx",
+      "target": "components_convexclientprovider_convex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components\\ConvexClientProvider.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "components_convexclientprovider_tsx",
+      "target": "components_convexclientprovider_convexclientprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components\\ConvexClientProvider.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_auth_config_ts",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\auth.config.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "convex_generated_server_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "generated_server_httpaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "convex_generated_api_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "generated_api_internal",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "backend",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "svix",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "convex_http_http",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "convex_http_svixid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "convex_http_svixtimestamp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "convex_http_svixsignature",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "convex_http_wh",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_http_ts",
+      "target": "convex_http_primaryemail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\http.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_myfunctions_ts",
+      "target": "values",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_myfunctions_ts",
+      "target": "convex_generated_server_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_myfunctions_ts",
+      "target": "generated_server_query",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_myfunctions_ts",
+      "target": "generated_server_mutation",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_myfunctions_ts",
+      "target": "generated_server_action",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_myfunctions_ts",
+      "target": "convex_generated_api_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_myfunctions_ts",
+      "target": "generated_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_myfunctions_ts",
+      "target": "convex_myfunctions_listnumbers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_myfunctions_ts",
+      "target": "convex_myfunctions_addnumber",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_myfunctions_ts",
+      "target": "convex_myfunctions_myaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\myFunctions.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_schema_ts",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\schema.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_schema_ts",
+      "target": "values",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\schema.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_json",
+      "target": "convex_tsconfig_compileroptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_allowjs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_strict",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_moduleresolution",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_jsx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_skiplibcheck",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_allowsyntheticdefaultimports",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_target",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_lib",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions_lib",
+      "target": "ref_es2023",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "convex_tsconfig_compileroptions_lib",
+      "target": "ref_dom",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_types",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions_types",
+      "target": "ref_node",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_forceconsistentcasinginfilenames",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_module",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_isolatedmodules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_noemit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_json",
+      "target": "convex_tsconfig_include",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_include",
+      "target": "ref",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "convex_tsconfig_json",
+      "target": "convex_tsconfig_exclude",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_tsconfig_exclude",
+      "target": "ref_generated",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "convex_users_ts",
+      "target": "values",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\users.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_users_ts",
+      "target": "convex_generated_server_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\users.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_users_ts",
+      "target": "generated_server_internalmutation",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\users.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_users_ts",
+      "target": "convex_users_upsertfromclerk",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\users.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_users_ts",
+      "target": "convex_users_deletefromclerk",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\users.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_api_d_ts",
+      "target": "convex_http_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\api.d.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_api_d_ts",
+      "target": "convex_myfunctions_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\api.d.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_api_d_ts",
+      "target": "convex_users_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\api.d.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_api_d_ts",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\api.d.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_api_js",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\api.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_api_js",
+      "target": "generated_api_components",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\api.js",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_datamodel_d_ts",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\dataModel.d.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_datamodel_d_ts",
+      "target": "values",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\dataModel.d.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_datamodel_d_ts",
+      "target": "convex_schema_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\dataModel.d.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_datamodel_d_ts",
+      "target": "generated_datamodel_d_tablenames",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\dataModel.d.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_datamodel_d_ts",
+      "target": "generated_datamodel_d_doc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\dataModel.d.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_datamodel_d_ts",
+      "target": "generated_datamodel_d_id",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\dataModel.d.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_datamodel_d_ts",
+      "target": "generated_datamodel_d_datamodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\dataModel.d.ts",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_server_d_ts",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_server_d_ts",
+      "target": "c_dev_accounty_accounty_convex_generated_datamodel_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_server_d_ts",
+      "target": "generated_datamodel_datamodel",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_server_d_ts",
+      "target": "generated_server_d_queryctx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_server_d_ts",
+      "target": "generated_server_d_mutationctx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_server_d_ts",
+      "target": "generated_server_d_actionctx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L123",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_server_d_ts",
+      "target": "generated_server_d_databasereader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_server_d_ts",
+      "target": "generated_server_d_databasewriter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\server.d.ts",
+      "source_location": "L143",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_server_js",
+      "target": "server",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\server.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_ai_ai_files_state_json",
+      "target": "ai_ai_files_state_guidelineshash",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\ai\\ai-files.state.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_ai_ai_files_state_json",
+      "target": "ai_ai_files_state_agentsmdsectionhash",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\ai\\ai-files.state.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_ai_ai_files_state_json",
+      "target": "ai_ai_files_state_claudemdhash",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\ai\\ai-files.state.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "convex_generated_ai_ai_files_state_json",
+      "target": "ai_ai_files_state_agentskillssha",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex\\_generated\\ai\\ai-files.state.json",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

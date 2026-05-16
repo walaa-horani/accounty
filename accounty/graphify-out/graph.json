@@ -1,0 +1,3428 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "eslint.config.mjs",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L1",
+      "community": 15,
+      "norm_label": "eslint.config.mjs",
+      "id": "eslint_config_mjs"
+    },
+    {
+      "label": "next-env.d.ts",
+      "file_type": "code",
+      "source_file": "next-env.d.ts",
+      "source_location": "L1",
+      "community": 16,
+      "norm_label": "next-env.d.ts",
+      "id": "next_env_d_ts"
+    },
+    {
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L1",
+      "community": 17,
+      "norm_label": "next.config.ts",
+      "id": "next_config_ts"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "community": 2,
+      "norm_label": "package.json",
+      "id": "package_json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "community": 2,
+      "norm_label": "name",
+      "id": "accounty_package_name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "community": 2,
+      "norm_label": "version",
+      "id": "accounty_package_version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "community": 2,
+      "norm_label": "private",
+      "id": "accounty_package_private"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "community": 2,
+      "norm_label": "scripts",
+      "id": "accounty_package_scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "community": 2,
+      "norm_label": "dev",
+      "id": "accounty_package_scripts_dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "community": 2,
+      "norm_label": "build",
+      "id": "accounty_package_scripts_build"
+    },
+    {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "community": 2,
+      "norm_label": "start",
+      "id": "accounty_package_scripts_start"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "community": 2,
+      "norm_label": "lint",
+      "id": "accounty_package_scripts_lint"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "community": 2,
+      "norm_label": "dependencies",
+      "id": "accounty_package_dependencies"
+    },
+    {
+      "label": "@clerk/nextjs",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "community": 2,
+      "norm_label": "@clerk/nextjs",
+      "id": "accounty_package_dependencies_clerk_nextjs"
+    },
+    {
+      "label": "@clerk/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "community": 2,
+      "norm_label": "@clerk/react",
+      "id": "accounty_package_dependencies_clerk_react"
+    },
+    {
+      "label": "next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "community": 2,
+      "norm_label": "next",
+      "id": "accounty_package_dependencies_next"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "community": 2,
+      "norm_label": "react",
+      "id": "accounty_package_dependencies_react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "community": 2,
+      "norm_label": "react-dom",
+      "id": "accounty_package_dependencies_react_dom"
+    },
+    {
+      "label": "svix",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "community": 2,
+      "norm_label": "svix",
+      "id": "accounty_package_dependencies_svix"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "community": 8,
+      "norm_label": "devdependencies",
+      "id": "accounty_package_devdependencies"
+    },
+    {
+      "label": "@convex-dev/eslint-plugin",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "community": 8,
+      "norm_label": "@convex-dev/eslint-plugin",
+      "id": "accounty_package_devdependencies_convex_dev_eslint_plugin"
+    },
+    {
+      "label": "@tailwindcss/postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "community": 8,
+      "norm_label": "@tailwindcss/postcss",
+      "id": "accounty_package_devdependencies_tailwindcss_postcss"
+    },
+    {
+      "label": "@types/node",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "community": 8,
+      "norm_label": "@types/node",
+      "id": "accounty_package_devdependencies_types_node"
+    },
+    {
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "community": 8,
+      "norm_label": "@types/react",
+      "id": "accounty_package_devdependencies_types_react"
+    },
+    {
+      "label": "eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "community": 8,
+      "norm_label": "eslint",
+      "id": "accounty_package_devdependencies_eslint"
+    },
+    {
+      "label": "eslint-config-next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "community": 8,
+      "norm_label": "eslint-config-next",
+      "id": "accounty_package_devdependencies_eslint_config_next"
+    },
+    {
+      "label": "prettier",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "community": 8,
+      "norm_label": "prettier",
+      "id": "accounty_package_devdependencies_prettier"
+    },
+    {
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "community": 8,
+      "norm_label": "tailwindcss",
+      "id": "accounty_package_devdependencies_tailwindcss"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "community": 8,
+      "norm_label": "typescript",
+      "id": "accounty_package_devdependencies_typescript"
+    },
+    {
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "community": 14,
+      "norm_label": "postcss.config.mjs",
+      "id": "postcss_config_mjs"
+    },
+    {
+      "label": "proxy.ts",
+      "file_type": "code",
+      "source_file": "proxy.ts",
+      "source_location": "L1",
+      "community": 14,
+      "norm_label": "proxy.ts",
+      "id": "proxy_ts"
+    },
+    {
+      "label": "isProtectedRoute",
+      "file_type": "code",
+      "source_file": "proxy.ts",
+      "source_location": "L3",
+      "community": 14,
+      "norm_label": "isprotectedroute",
+      "id": "accounty_proxy_isprotectedroute"
+    },
+    {
+      "label": "config",
+      "file_type": "code",
+      "source_file": "proxy.ts",
+      "source_location": "L9",
+      "community": 14,
+      "norm_label": "config",
+      "id": "accounty_proxy_config"
+    },
+    {
+      "label": "skills-lock.json",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L1",
+      "community": 2,
+      "norm_label": "skills-lock.json",
+      "id": "skills_lock_json"
+    },
+    {
+      "label": "skills",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L3",
+      "community": 4,
+      "norm_label": "skills",
+      "id": "accounty_skills_lock_skills"
+    },
+    {
+      "label": "convex",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L4",
+      "community": 4,
+      "norm_label": "convex",
+      "id": "accounty_skills_lock_skills_convex"
+    },
+    {
+      "label": "source",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L5",
+      "community": 4,
+      "norm_label": "source",
+      "id": "accounty_skills_lock_convex_source"
+    },
+    {
+      "label": "sourceType",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L6",
+      "community": 4,
+      "norm_label": "sourcetype",
+      "id": "accounty_skills_lock_convex_sourcetype"
+    },
+    {
+      "label": "skillPath",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L7",
+      "community": 4,
+      "norm_label": "skillpath",
+      "id": "accounty_skills_lock_convex_skillpath"
+    },
+    {
+      "label": "computedHash",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L8",
+      "community": 4,
+      "norm_label": "computedhash",
+      "id": "accounty_skills_lock_convex_computedhash"
+    },
+    {
+      "label": "convex-create-component",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L10",
+      "community": 4,
+      "norm_label": "convex-create-component",
+      "id": "accounty_skills_lock_skills_convex_create_component"
+    },
+    {
+      "label": "convex-migration-helper",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L16",
+      "community": 4,
+      "norm_label": "convex-migration-helper",
+      "id": "accounty_skills_lock_skills_convex_migration_helper"
+    },
+    {
+      "label": "convex-performance-audit",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L22",
+      "community": 4,
+      "norm_label": "convex-performance-audit",
+      "id": "accounty_skills_lock_skills_convex_performance_audit"
+    },
+    {
+      "label": "convex-quickstart",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L28",
+      "community": 4,
+      "norm_label": "convex-quickstart",
+      "id": "accounty_skills_lock_skills_convex_quickstart"
+    },
+    {
+      "label": "convex-setup-auth",
+      "file_type": "code",
+      "source_file": "skills-lock.json",
+      "source_location": "L34",
+      "community": 4,
+      "norm_label": "convex-setup-auth",
+      "id": "accounty_skills_lock_skills_convex_setup_auth"
+    },
+    {
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "tsconfig.json",
+      "id": "tsconfig_json"
+    },
+    {
+      "label": "esModuleInterop",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L13",
+      "community": 0,
+      "norm_label": "esmoduleinterop",
+      "id": "accounty_tsconfig_compileroptions_esmoduleinterop"
+    },
+    {
+      "label": "resolveJsonModule",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L16",
+      "community": 0,
+      "norm_label": "resolvejsonmodule",
+      "id": "accounty_tsconfig_compileroptions_resolvejsonmodule"
+    },
+    {
+      "label": "incremental",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L19",
+      "community": 0,
+      "norm_label": "incremental",
+      "id": "accounty_tsconfig_compileroptions_incremental"
+    },
+    {
+      "label": "plugins",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L20",
+      "community": 0,
+      "norm_label": "plugins",
+      "id": "accounty_tsconfig_compileroptions_plugins"
+    },
+    {
+      "label": "paths",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "community": 0,
+      "norm_label": "paths",
+      "id": "accounty_tsconfig_compileroptions_paths"
+    },
+    {
+      "label": "@/*",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L26",
+      "community": 0,
+      "norm_label": "@/*",
+      "id": "accounty_tsconfig_paths"
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L1",
+      "community": 11,
+      "norm_label": "layout.tsx",
+      "id": "app_layout_tsx"
+    },
+    {
+      "label": "geistSans",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L7",
+      "community": 11,
+      "norm_label": "geistsans",
+      "id": "app_layout_geistsans"
+    },
+    {
+      "label": "geistMono",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L12",
+      "community": 11,
+      "norm_label": "geistmono",
+      "id": "app_layout_geistmono"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L17",
+      "community": 11,
+      "norm_label": "metadata",
+      "id": "app_layout_metadata"
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L25",
+      "community": 11,
+      "norm_label": "rootlayout()",
+      "id": "app_layout_rootlayout"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "page.tsx",
+      "id": "app_page_tsx"
+    },
+    {
+      "label": "Home()",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L15",
+      "community": 7,
+      "norm_label": "home()",
+      "id": "app_page_home"
+    },
+    {
+      "label": "SignInForm()",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L37",
+      "community": 7,
+      "norm_label": "signinform()",
+      "id": "app_page_signinform"
+    },
+    {
+      "label": "Content()",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L55",
+      "community": 7,
+      "norm_label": "content()",
+      "id": "app_page_content"
+    },
+    {
+      "label": "ResourceCard()",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L149",
+      "community": 7,
+      "norm_label": "resourcecard()",
+      "id": "app_page_resourcecard"
+    },
+    {
+      "label": "inner.tsx",
+      "file_type": "code",
+      "source_file": "app/server/inner.tsx",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "inner.tsx",
+      "id": "app_server_inner_tsx"
+    },
+    {
+      "label": "ServerPage()",
+      "file_type": "code",
+      "source_file": "app/server/page.tsx",
+      "source_location": "L5",
+      "community": 7,
+      "norm_label": "serverpage()",
+      "id": "server_page_serverpage"
+    },
+    {
+      "label": "SignInPage()",
+      "file_type": "code",
+      "source_file": "app/sign-in/[[...sign-in]]/page.tsx",
+      "source_location": "L3",
+      "community": 7,
+      "norm_label": "signinpage()",
+      "id": "sign_in_page_signinpage"
+    },
+    {
+      "label": "SignUpPage()",
+      "file_type": "code",
+      "source_file": "app/sign-up/[[...sign-up]]/page.tsx",
+      "source_location": "L3",
+      "community": 7,
+      "norm_label": "signuppage()",
+      "id": "sign_up_page_signuppage"
+    },
+    {
+      "label": "ConvexClientProvider.tsx",
+      "file_type": "code",
+      "source_file": "components/ConvexClientProvider.tsx",
+      "source_location": "L1",
+      "community": 4,
+      "norm_label": "convexclientprovider.tsx",
+      "id": "components_convexclientprovider_tsx"
+    },
+    {
+      "label": "auth.config.ts",
+      "file_type": "code",
+      "source_file": "convex/auth.config.ts",
+      "source_location": "L1",
+      "community": 18,
+      "norm_label": "auth.config.ts",
+      "id": "convex_auth_config_ts"
+    },
+    {
+      "label": "http.ts",
+      "file_type": "code",
+      "source_file": "convex/http.ts",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "http.ts",
+      "id": "convex_http_ts"
+    },
+    {
+      "label": "http",
+      "file_type": "code",
+      "source_file": "convex/http.ts",
+      "source_location": "L10",
+      "community": 3,
+      "norm_label": "http",
+      "id": "convex_http_http"
+    },
+    {
+      "label": "svixId",
+      "file_type": "code",
+      "source_file": "convex/http.ts",
+      "source_location": "L21",
+      "community": 3,
+      "norm_label": "svixid",
+      "id": "convex_http_svixid"
+    },
+    {
+      "label": "svixTimestamp",
+      "file_type": "code",
+      "source_file": "convex/http.ts",
+      "source_location": "L22",
+      "community": 3,
+      "norm_label": "svixtimestamp",
+      "id": "convex_http_svixtimestamp"
+    },
+    {
+      "label": "svixSignature",
+      "file_type": "code",
+      "source_file": "convex/http.ts",
+      "source_location": "L23",
+      "community": 3,
+      "norm_label": "svixsignature",
+      "id": "convex_http_svixsignature"
+    },
+    {
+      "label": "wh",
+      "file_type": "code",
+      "source_file": "convex/http.ts",
+      "source_location": "L31",
+      "community": 3,
+      "norm_label": "wh",
+      "id": "convex_http_wh"
+    },
+    {
+      "label": "primaryEmail",
+      "file_type": "code",
+      "source_file": "convex/http.ts",
+      "source_location": "L45",
+      "community": 3,
+      "norm_label": "primaryemail",
+      "id": "convex_http_primaryemail"
+    },
+    {
+      "label": "myFunctions.ts",
+      "file_type": "code",
+      "source_file": "convex/myFunctions.ts",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "myfunctions.ts",
+      "id": "convex_myfunctions_ts"
+    },
+    {
+      "label": "listNumbers",
+      "file_type": "code",
+      "source_file": "convex/myFunctions.ts",
+      "source_location": "L9",
+      "community": 3,
+      "norm_label": "listnumbers",
+      "id": "convex_myfunctions_listnumbers"
+    },
+    {
+      "label": "addNumber",
+      "file_type": "code",
+      "source_file": "convex/myFunctions.ts",
+      "source_location": "L32",
+      "community": 3,
+      "norm_label": "addnumber",
+      "id": "convex_myfunctions_addnumber"
+    },
+    {
+      "label": "myAction",
+      "file_type": "code",
+      "source_file": "convex/myFunctions.ts",
+      "source_location": "L53",
+      "community": 3,
+      "norm_label": "myaction",
+      "id": "convex_myfunctions_myaction"
+    },
+    {
+      "label": "schema.ts",
+      "file_type": "code",
+      "source_file": "convex/schema.ts",
+      "source_location": "L1",
+      "community": 13,
+      "norm_label": "schema.ts",
+      "id": "convex_schema_ts"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L6",
+      "community": 0,
+      "norm_label": "compileroptions",
+      "id": "convex_tsconfig_compileroptions"
+    },
+    {
+      "label": "allowJs",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L8",
+      "community": 0,
+      "norm_label": "allowjs",
+      "id": "convex_tsconfig_compileroptions_allowjs"
+    },
+    {
+      "label": "strict",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L9",
+      "community": 0,
+      "norm_label": "strict",
+      "id": "convex_tsconfig_compileroptions_strict"
+    },
+    {
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L10",
+      "community": 0,
+      "norm_label": "moduleresolution",
+      "id": "convex_tsconfig_compileroptions_moduleresolution"
+    },
+    {
+      "label": "jsx",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L11",
+      "community": 0,
+      "norm_label": "jsx",
+      "id": "convex_tsconfig_compileroptions_jsx"
+    },
+    {
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L12",
+      "community": 0,
+      "norm_label": "skiplibcheck",
+      "id": "convex_tsconfig_compileroptions_skiplibcheck"
+    },
+    {
+      "label": "allowSyntheticDefaultImports",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L13",
+      "community": 0,
+      "norm_label": "allowsyntheticdefaultimports",
+      "id": "convex_tsconfig_compileroptions_allowsyntheticdefaultimports"
+    },
+    {
+      "label": "target",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L16",
+      "community": 0,
+      "norm_label": "target",
+      "id": "convex_tsconfig_compileroptions_target"
+    },
+    {
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L17",
+      "community": 0,
+      "norm_label": "lib",
+      "id": "convex_tsconfig_compileroptions_lib"
+    },
+    {
+      "label": "types",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L18",
+      "community": 0,
+      "norm_label": "types",
+      "id": "convex_tsconfig_compileroptions_types"
+    },
+    {
+      "label": "forceConsistentCasingInFileNames",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L19",
+      "community": 0,
+      "norm_label": "forceconsistentcasinginfilenames",
+      "id": "convex_tsconfig_compileroptions_forceconsistentcasinginfilenames"
+    },
+    {
+      "label": "module",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L20",
+      "community": 0,
+      "norm_label": "module",
+      "id": "convex_tsconfig_compileroptions_module"
+    },
+    {
+      "label": "isolatedModules",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L21",
+      "community": 0,
+      "norm_label": "isolatedmodules",
+      "id": "convex_tsconfig_compileroptions_isolatedmodules"
+    },
+    {
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L22",
+      "community": 0,
+      "norm_label": "noemit",
+      "id": "convex_tsconfig_compileroptions_noemit"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L24",
+      "community": 0,
+      "norm_label": "include",
+      "id": "convex_tsconfig_include"
+    },
+    {
+      "label": "exclude",
+      "file_type": "code",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L25",
+      "community": 0,
+      "norm_label": "exclude",
+      "id": "convex_tsconfig_exclude"
+    },
+    {
+      "label": "users.ts",
+      "file_type": "code",
+      "source_file": "convex/users.ts",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "users.ts",
+      "id": "convex_users_ts"
+    },
+    {
+      "label": "upsertFromClerk",
+      "file_type": "code",
+      "source_file": "convex/users.ts",
+      "source_location": "L4",
+      "community": 3,
+      "norm_label": "upsertfromclerk",
+      "id": "convex_users_upsertfromclerk"
+    },
+    {
+      "label": "deleteFromClerk",
+      "file_type": "code",
+      "source_file": "convex/users.ts",
+      "source_location": "L34",
+      "community": 3,
+      "norm_label": "deletefromclerk",
+      "id": "convex_users_deletefromclerk"
+    },
+    {
+      "label": "api.d.ts",
+      "file_type": "code",
+      "source_file": "convex/_generated/api.d.ts",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "api.d.ts",
+      "id": "convex_generated_api_d_ts"
+    },
+    {
+      "label": "api.js",
+      "file_type": "code",
+      "source_file": "convex/_generated/api.js",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "api.js",
+      "id": "convex_generated_api_js"
+    },
+    {
+      "label": "components",
+      "file_type": "code",
+      "source_file": "convex/_generated/api.js",
+      "source_location": "L23",
+      "community": 7,
+      "norm_label": "components",
+      "id": "generated_api_components"
+    },
+    {
+      "label": "dataModel.d.ts",
+      "file_type": "code",
+      "source_file": "convex/_generated/dataModel.d.ts",
+      "source_location": "L1",
+      "community": 13,
+      "norm_label": "datamodel.d.ts",
+      "id": "convex_generated_datamodel_d_ts"
+    },
+    {
+      "label": "TableNames",
+      "file_type": "code",
+      "source_file": "convex/_generated/dataModel.d.ts",
+      "source_location": "L23",
+      "community": 13,
+      "norm_label": "tablenames",
+      "id": "generated_datamodel_d_tablenames"
+    },
+    {
+      "label": "Doc",
+      "file_type": "code",
+      "source_file": "convex/_generated/dataModel.d.ts",
+      "source_location": "L30",
+      "community": 13,
+      "norm_label": "doc",
+      "id": "generated_datamodel_d_doc"
+    },
+    {
+      "label": "Id",
+      "file_type": "code",
+      "source_file": "convex/_generated/dataModel.d.ts",
+      "source_location": "L48",
+      "community": 13,
+      "norm_label": "id",
+      "id": "generated_datamodel_d_id"
+    },
+    {
+      "label": "server.d.ts",
+      "file_type": "code",
+      "source_file": "convex/_generated/server.d.ts",
+      "source_location": "L1",
+      "community": 10,
+      "norm_label": "server.d.ts",
+      "id": "convex_generated_server_d_ts"
+    },
+    {
+      "label": "QueryCtx",
+      "file_type": "code",
+      "source_file": "convex/_generated/server.d.ts",
+      "source_location": "L107",
+      "community": 10,
+      "norm_label": "queryctx",
+      "id": "generated_server_d_queryctx"
+    },
+    {
+      "label": "MutationCtx",
+      "file_type": "code",
+      "source_file": "convex/_generated/server.d.ts",
+      "source_location": "L115",
+      "community": 10,
+      "norm_label": "mutationctx",
+      "id": "generated_server_d_mutationctx"
+    },
+    {
+      "label": "ActionCtx",
+      "file_type": "code",
+      "source_file": "convex/_generated/server.d.ts",
+      "source_location": "L123",
+      "community": 10,
+      "norm_label": "actionctx",
+      "id": "generated_server_d_actionctx"
+    },
+    {
+      "label": "DatabaseReader",
+      "file_type": "code",
+      "source_file": "convex/_generated/server.d.ts",
+      "source_location": "L132",
+      "community": 10,
+      "norm_label": "databasereader",
+      "id": "generated_server_d_databasereader"
+    },
+    {
+      "label": "DatabaseWriter",
+      "file_type": "code",
+      "source_file": "convex/_generated/server.d.ts",
+      "source_location": "L143",
+      "community": 10,
+      "norm_label": "databasewriter",
+      "id": "generated_server_d_databasewriter"
+    },
+    {
+      "label": "server.js",
+      "file_type": "code",
+      "source_file": "convex/_generated/server.js",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "server.js",
+      "id": "convex_generated_server_js"
+    },
+    {
+      "label": "ai-files.state.json",
+      "file_type": "code",
+      "source_file": "convex/_generated/ai/ai-files.state.json",
+      "source_location": "L1",
+      "community": 12,
+      "norm_label": "ai-files.state.json",
+      "id": "convex_generated_ai_ai_files_state_json"
+    },
+    {
+      "label": "guidelinesHash",
+      "file_type": "code",
+      "source_file": "convex/_generated/ai/ai-files.state.json",
+      "source_location": "L2",
+      "community": 12,
+      "norm_label": "guidelineshash",
+      "id": "ai_ai_files_state_guidelineshash"
+    },
+    {
+      "label": "agentsMdSectionHash",
+      "file_type": "code",
+      "source_file": "convex/_generated/ai/ai-files.state.json",
+      "source_location": "L3",
+      "community": 12,
+      "norm_label": "agentsmdsectionhash",
+      "id": "ai_ai_files_state_agentsmdsectionhash"
+    },
+    {
+      "label": "claudeMdHash",
+      "file_type": "code",
+      "source_file": "convex/_generated/ai/ai-files.state.json",
+      "source_location": "L4",
+      "community": 12,
+      "norm_label": "claudemdhash",
+      "id": "ai_ai_files_state_claudemdhash"
+    },
+    {
+      "label": "agentSkillsSha",
+      "file_type": "code",
+      "source_file": "convex/_generated/ai/ai-files.state.json",
+      "source_location": "L5",
+      "community": 12,
+      "norm_label": "agentskillssha",
+      "id": "ai_ai_files_state_agentskillssha"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "community": 19,
+      "norm_label": "agents.md",
+      "id": "agents_md"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "community": 20,
+      "norm_label": "claude.md",
+      "id": "claude_md"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "community": 6,
+      "norm_label": "readme.md",
+      "id": "readme_md"
+    },
+    {
+      "label": "Welcome to your Convex + Next.js + Clerk app",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "community": 6,
+      "norm_label": "welcome to your convex + next.js + clerk app",
+      "id": "accounty_readme_welcome_to_your_convex_next_js_clerk_app"
+    },
+    {
+      "label": "Get started",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "community": 6,
+      "norm_label": "get started",
+      "id": "accounty_readme_get_started"
+    },
+    {
+      "label": "code:block1 (npm install)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "community": 6,
+      "norm_label": "code:block1 (npm install)",
+      "id": "accounty_readme_codeblock_1"
+    },
+    {
+      "label": "code:block2 (npm create convex@latest -- -t nextjs-clerk)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L24",
+      "community": 6,
+      "norm_label": "code:block2 (npm create convex@latest -- -t nextjs-clerk)",
+      "id": "accounty_readme_codeblock_2"
+    },
+    {
+      "label": "Learn more",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L38",
+      "community": 6,
+      "norm_label": "learn more",
+      "id": "accounty_readme_learn_more"
+    },
+    {
+      "label": "Join the community",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L46",
+      "community": 6,
+      "norm_label": "join the community",
+      "id": "accounty_readme_join_the_community"
+    },
+    {
+      "label": "Welcome to your Convex functions directory!",
+      "file_type": "document",
+      "source_file": "convex/README.md",
+      "source_location": "L1",
+      "community": 6,
+      "norm_label": "welcome to your convex functions directory!",
+      "id": "convex_readme_welcome_to_your_convex_functions_directory"
+    },
+    {
+      "label": "code:ts (// convex/myFunctions.ts)",
+      "file_type": "document",
+      "source_file": "convex/README.md",
+      "source_location": "L8",
+      "community": 6,
+      "norm_label": "code:ts (// convex/myfunctions.ts)",
+      "id": "convex_readme_codeblock_1"
+    },
+    {
+      "label": "code:ts (const data = useQuery(api.myFunctions.myQueryFunction, {)",
+      "file_type": "document",
+      "source_file": "convex/README.md",
+      "source_location": "L38",
+      "community": 6,
+      "norm_label": "code:ts (const data = usequery(api.myfunctions.myqueryfunction, {)",
+      "id": "convex_readme_codeblock_2"
+    },
+    {
+      "label": "code:ts (const mutation = useMutation(api.myFunctions.myMutationFunct)",
+      "file_type": "document",
+      "source_file": "convex/README.md",
+      "source_location": "L75",
+      "community": 6,
+      "norm_label": "code:ts (const mutation = usemutation(api.myfunctions.mymutationfunct)",
+      "id": "convex_readme_codeblock_4"
+    },
+    {
+      "label": "guidelines.md",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L1",
+      "community": 1,
+      "norm_label": "guidelines.md",
+      "id": "convex_generated_ai_guidelines_md"
+    },
+    {
+      "label": "Convex guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L1",
+      "community": 1,
+      "norm_label": "convex guidelines",
+      "id": "ai_guidelines_convex_guidelines"
+    },
+    {
+      "label": "Function guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L3",
+      "community": 5,
+      "norm_label": "function guidelines",
+      "id": "ai_guidelines_function_guidelines"
+    },
+    {
+      "label": "Http endpoint syntax",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L5",
+      "community": 5,
+      "norm_label": "http endpoint syntax",
+      "id": "ai_guidelines_http_endpoint_syntax"
+    },
+    {
+      "label": "code:typescript (import { httpRouter } from \"convex/server\";)",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L9",
+      "community": 5,
+      "norm_label": "code:typescript (import { httprouter } from \"convex/server\";)",
+      "id": "ai_guidelines_codeblock_1"
+    },
+    {
+      "label": "Validators",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L25",
+      "community": 5,
+      "norm_label": "validators",
+      "id": "ai_guidelines_validators"
+    },
+    {
+      "label": "code:typescript (import { mutation } from \"./_generated/server\";)",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L29",
+      "community": 5,
+      "norm_label": "code:typescript (import { mutation } from \"./_generated/server\";)",
+      "id": "ai_guidelines_codeblock_2"
+    },
+    {
+      "label": "code:typescript (import { defineSchema, defineTable } from \"convex/server\";)",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L45",
+      "community": 5,
+      "norm_label": "code:typescript (import { defineschema, definetable } from \"convex/server\";)",
+      "id": "ai_guidelines_codeblock_3"
+    },
+    {
+      "label": "Function registration",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L79",
+      "community": 5,
+      "norm_label": "function registration",
+      "id": "ai_guidelines_function_registration"
+    },
+    {
+      "label": "Function calling",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L86",
+      "community": 5,
+      "norm_label": "function calling",
+      "id": "ai_guidelines_function_calling"
+    },
+    {
+      "label": "code:block4 (export const f = query({)",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L96",
+      "community": 5,
+      "norm_label": "code:block4 (export const f = query({)",
+      "id": "ai_guidelines_codeblock_4"
+    },
+    {
+      "label": "Function references",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L113",
+      "community": 5,
+      "norm_label": "function references",
+      "id": "ai_guidelines_function_references"
+    },
+    {
+      "label": "Pagination",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L121",
+      "community": 5,
+      "norm_label": "pagination",
+      "id": "ai_guidelines_pagination"
+    },
+    {
+      "label": "code:ts (import { v } from \"convex/values\";)",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L125",
+      "community": 5,
+      "norm_label": "code:ts (import { v } from \"convex/values\";)",
+      "id": "ai_guidelines_codeblock_5"
+    },
+    {
+      "label": "Schema guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L150",
+      "community": 1,
+      "norm_label": "schema guidelines",
+      "id": "ai_guidelines_schema_guidelines"
+    },
+    {
+      "label": "Authentication guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L160",
+      "community": 1,
+      "norm_label": "authentication guidelines",
+      "id": "ai_guidelines_authentication_guidelines"
+    },
+    {
+      "label": "code:typescript (export default {)",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L165",
+      "community": 1,
+      "norm_label": "code:typescript (export default {)",
+      "id": "ai_guidelines_codeblock_6"
+    },
+    {
+      "label": "code:tsx (import { ConvexProviderWithAuth, ConvexReactClient } from \"c)",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L183",
+      "community": 1,
+      "norm_label": "code:tsx (import { convexproviderwithauth, convexreactclient } from \"c)",
+      "id": "ai_guidelines_codeblock_7"
+    },
+    {
+      "label": "Typescript guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L199",
+      "community": 1,
+      "norm_label": "typescript guidelines",
+      "id": "ai_guidelines_typescript_guidelines"
+    },
+    {
+      "label": "code:ts (import { query } from \"./_generated/server\";)",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L206",
+      "community": 1,
+      "norm_label": "code:ts (import { query } from \"./_generated/server\";)",
+      "id": "ai_guidelines_codeblock_8"
+    },
+    {
+      "label": "Full text search guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L228",
+      "community": 1,
+      "norm_label": "full text search guidelines",
+      "id": "ai_guidelines_full_text_search_guidelines"
+    },
+    {
+      "label": "Query guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L239",
+      "community": 1,
+      "norm_label": "query guidelines",
+      "id": "ai_guidelines_query_guidelines"
+    },
+    {
+      "label": "Ordering",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L249",
+      "community": 1,
+      "norm_label": "ordering",
+      "id": "ai_guidelines_ordering"
+    },
+    {
+      "label": "Mutation guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L255",
+      "community": 1,
+      "norm_label": "mutation guidelines",
+      "id": "ai_guidelines_mutation_guidelines"
+    },
+    {
+      "label": "Action guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L260",
+      "community": 1,
+      "norm_label": "action guidelines",
+      "id": "ai_guidelines_action_guidelines"
+    },
+    {
+      "label": "code:ts (import { action } from \"./_generated/server\";)",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L268",
+      "community": 1,
+      "norm_label": "code:ts (import { action } from \"./_generated/server\";)",
+      "id": "ai_guidelines_codeblock_9"
+    },
+    {
+      "label": "Scheduling guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L280",
+      "community": 1,
+      "norm_label": "scheduling guidelines",
+      "id": "ai_guidelines_scheduling_guidelines"
+    },
+    {
+      "label": "Cron guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L282",
+      "community": 1,
+      "norm_label": "cron guidelines",
+      "id": "ai_guidelines_cron_guidelines"
+    },
+    {
+      "label": "code:ts (import { cronJobs } from \"convex/server\";)",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L288",
+      "community": 1,
+      "norm_label": "code:ts (import { cronjobs } from \"convex/server\";)",
+      "id": "ai_guidelines_codeblock_10"
+    },
+    {
+      "label": "Testing guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L311",
+      "community": 1,
+      "norm_label": "testing guidelines",
+      "id": "ai_guidelines_testing_guidelines"
+    },
+    {
+      "label": "code:typescript (/// <reference types=\"vite/client\" />)",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L317",
+      "community": 1,
+      "norm_label": "code:typescript (/// <reference types=\"vite/client\" />)",
+      "id": "ai_guidelines_codeblock_11"
+    },
+    {
+      "label": "File storage guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L336",
+      "community": 1,
+      "norm_label": "file storage guidelines",
+      "id": "ai_guidelines_file_storage_guidelines"
+    },
+    {
+      "label": "Convex Backend",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": "https://convex.dev",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 9,
+      "norm_label": "convex backend",
+      "id": "agents_convex"
+    },
+    {
+      "label": "Convex AI Guidelines",
+      "file_type": "document",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 9,
+      "norm_label": "convex ai guidelines",
+      "id": "convex_generated_ai_guidelines"
+    },
+    {
+      "label": "Next.js",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": "https://nextjs.org/",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 21,
+      "norm_label": "next.js",
+      "id": "readme_nextjs"
+    },
+    {
+      "label": "Clerk Authentication",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": "https://clerk.com/",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 9,
+      "norm_label": "clerk authentication",
+      "id": "readme_clerk"
+    },
+    {
+      "label": "Convex Auth Configuration",
+      "file_type": "code",
+      "source_file": "convex/auth.config.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 9,
+      "norm_label": "convex auth configuration",
+      "id": "convex_auth_config"
+    },
+    {
+      "label": "Convex Schema",
+      "file_type": "code",
+      "source_file": "convex/schema.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 9,
+      "norm_label": "convex schema",
+      "id": "convex_schema"
+    },
+    {
+      "label": "Convex HTTP Router",
+      "file_type": "code",
+      "source_file": "convex/http.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 9,
+      "norm_label": "convex http router",
+      "id": "convex_http"
+    },
+    {
+      "label": "Generated API",
+      "file_type": "code",
+      "source_file": "convex/_generated/api.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 9,
+      "norm_label": "generated api",
+      "id": "convex_generated_api"
+    },
+    {
+      "label": "Generated Server Utilities",
+      "file_type": "code",
+      "source_file": "convex/_generated/server.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 9,
+      "norm_label": "generated server utilities",
+      "id": "convex_generated_server"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "accounty_package_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "accounty_package_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "accounty_package_private"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "accounty_package_scripts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "accounty_package_dependencies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "accounty_package_devdependencies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_lock_json",
+      "target": "accounty_package_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_scripts",
+      "target": "accounty_package_scripts_dev"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_scripts",
+      "target": "accounty_package_scripts_build"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_scripts",
+      "target": "accounty_package_scripts_start"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_scripts",
+      "target": "accounty_package_scripts_lint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_clerk_nextjs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_clerk_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_dependencies",
+      "target": "accounty_skills_lock_skills_convex"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_next"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_react_dom"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_dependencies",
+      "target": "accounty_package_dependencies_svix"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_convex_dev_eslint_plugin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_tailwindcss_postcss"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_types_node"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_types_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_eslint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_eslint_config_next"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_prettier"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_tailwindcss"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_package_devdependencies",
+      "target": "accounty_package_devdependencies_typescript"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "postcss_config_mjs",
+      "target": "accounty_proxy_config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "proxy.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "proxy_ts",
+      "target": "accounty_proxy_isprotectedroute"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "proxy.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "proxy_ts",
+      "target": "accounty_proxy_config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_lock_json",
+      "target": "accounty_skills_lock_skills"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills",
+      "target": "accounty_skills_lock_skills_convex"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills",
+      "target": "accounty_skills_lock_skills_convex_create_component"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills",
+      "target": "accounty_skills_lock_skills_convex_migration_helper"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills",
+      "target": "accounty_skills_lock_skills_convex_performance_audit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills",
+      "target": "accounty_skills_lock_skills_convex_quickstart"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills",
+      "target": "accounty_skills_lock_skills_convex_setup_auth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex",
+      "target": "accounty_skills_lock_convex_source"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex",
+      "target": "accounty_skills_lock_convex_sourcetype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex",
+      "target": "accounty_skills_lock_convex_skillpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex",
+      "target": "accounty_skills_lock_convex_computedhash"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/ConvexClientProvider.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_convexclientprovider_tsx",
+      "target": "accounty_skills_lock_skills_convex"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_create_component",
+      "target": "accounty_skills_lock_convex_source"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_migration_helper",
+      "target": "accounty_skills_lock_convex_source"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_performance_audit",
+      "target": "accounty_skills_lock_convex_source"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_quickstart",
+      "target": "accounty_skills_lock_convex_source"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_setup_auth",
+      "target": "accounty_skills_lock_convex_source"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_create_component",
+      "target": "accounty_skills_lock_convex_sourcetype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_migration_helper",
+      "target": "accounty_skills_lock_convex_sourcetype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_performance_audit",
+      "target": "accounty_skills_lock_convex_sourcetype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_quickstart",
+      "target": "accounty_skills_lock_convex_sourcetype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_setup_auth",
+      "target": "accounty_skills_lock_convex_sourcetype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_create_component",
+      "target": "accounty_skills_lock_convex_skillpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_migration_helper",
+      "target": "accounty_skills_lock_convex_skillpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_performance_audit",
+      "target": "accounty_skills_lock_convex_skillpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_quickstart",
+      "target": "accounty_skills_lock_convex_skillpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_setup_auth",
+      "target": "accounty_skills_lock_convex_skillpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_create_component",
+      "target": "accounty_skills_lock_convex_computedhash"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_migration_helper",
+      "target": "accounty_skills_lock_convex_computedhash"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_performance_audit",
+      "target": "accounty_skills_lock_convex_computedhash"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_quickstart",
+      "target": "accounty_skills_lock_convex_computedhash"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills-lock.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_skills_lock_skills_convex_setup_auth",
+      "target": "accounty_skills_lock_convex_computedhash"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tsconfig_json",
+      "target": "convex_tsconfig_compileroptions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tsconfig_json",
+      "target": "convex_tsconfig_include"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tsconfig_json",
+      "target": "convex_tsconfig_exclude"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_esmoduleinterop"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_resolvejsonmodule"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_incremental"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_plugins"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "accounty_tsconfig_compileroptions_paths"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_tsconfig_compileroptions_paths",
+      "target": "accounty_tsconfig_paths"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_layout_tsx",
+      "target": "components_convexclientprovider_tsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_layout_tsx",
+      "target": "app_layout_geistsans"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_layout_tsx",
+      "target": "app_layout_geistmono"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_layout_tsx",
+      "target": "app_layout_metadata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_layout_tsx",
+      "target": "app_layout_rootlayout"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/server/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page_tsx",
+      "target": "convex_generated_api_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page_tsx",
+      "target": "app_page_home"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page_tsx",
+      "target": "app_page_signinform"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page_tsx",
+      "target": "app_page_content"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page_tsx",
+      "target": "app_page_resourcecard"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/server/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page_tsx",
+      "target": "app_server_inner_tsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/server/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page_tsx",
+      "target": "server_page_serverpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/sign-in/[[...sign-in]]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page_tsx",
+      "target": "sign_in_page_signinpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/sign-up/[[...sign-up]]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page_tsx",
+      "target": "sign_up_page_signuppage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/server/inner.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_server_inner_tsx",
+      "target": "app_page_home"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/server/inner.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_server_inner_tsx",
+      "target": "convex_generated_api_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/http.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_http_ts",
+      "target": "convex_generated_server_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/http.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_http_ts",
+      "target": "convex_generated_api_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/http.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_http_ts",
+      "target": "convex_http_http"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/http.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_http_ts",
+      "target": "convex_http_svixid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/http.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_http_ts",
+      "target": "convex_http_svixtimestamp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/http.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_http_ts",
+      "target": "convex_http_svixsignature"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/http.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_http_ts",
+      "target": "convex_http_wh"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/http.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_http_ts",
+      "target": "convex_http_primaryemail"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/api.d.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_api_d_ts",
+      "target": "convex_http_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/myFunctions.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_myfunctions_ts",
+      "target": "convex_generated_server_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/myFunctions.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_myfunctions_ts",
+      "target": "convex_generated_api_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/myFunctions.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_myfunctions_ts",
+      "target": "convex_myfunctions_listnumbers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/myFunctions.ts",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_myfunctions_ts",
+      "target": "convex_myfunctions_addnumber"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/myFunctions.ts",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_myfunctions_ts",
+      "target": "convex_myfunctions_myaction"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/api.d.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_api_d_ts",
+      "target": "convex_myfunctions_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/dataModel.d.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_datamodel_d_ts",
+      "target": "convex_schema_ts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_target"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_lib"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_allowjs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_skiplibcheck"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_strict"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_noemit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_module"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_moduleresolution"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_isolatedmodules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_allowsyntheticdefaultimports"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_types"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/tsconfig.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_tsconfig_compileroptions",
+      "target": "convex_tsconfig_compileroptions_forceconsistentcasinginfilenames"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/users.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_users_ts",
+      "target": "convex_generated_server_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/users.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_users_ts",
+      "target": "convex_users_upsertfromclerk"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/users.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_users_ts",
+      "target": "convex_users_deletefromclerk"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/api.d.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_api_d_ts",
+      "target": "convex_users_ts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/api.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_api_js",
+      "target": "generated_api_components"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/dataModel.d.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_datamodel_d_ts",
+      "target": "generated_datamodel_d_tablenames"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/dataModel.d.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_datamodel_d_ts",
+      "target": "generated_datamodel_d_doc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/dataModel.d.ts",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_datamodel_d_ts",
+      "target": "generated_datamodel_d_id"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/server.d.ts",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_server_d_ts",
+      "target": "generated_server_d_queryctx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/server.d.ts",
+      "source_location": "L115",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_server_d_ts",
+      "target": "generated_server_d_mutationctx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/server.d.ts",
+      "source_location": "L123",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_server_d_ts",
+      "target": "generated_server_d_actionctx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/server.d.ts",
+      "source_location": "L132",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_server_d_ts",
+      "target": "generated_server_d_databasereader"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/server.d.ts",
+      "source_location": "L143",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_server_d_ts",
+      "target": "generated_server_d_databasewriter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/ai-files.state.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_ai_ai_files_state_json",
+      "target": "ai_ai_files_state_guidelineshash"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/ai-files.state.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_ai_ai_files_state_json",
+      "target": "ai_ai_files_state_agentsmdsectionhash"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/ai-files.state.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_ai_ai_files_state_json",
+      "target": "ai_ai_files_state_claudemdhash"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/ai-files.state.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_ai_ai_files_state_json",
+      "target": "ai_ai_files_state_agentskillssha"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_md",
+      "target": "accounty_readme_welcome_to_your_convex_next_js_clerk_app"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_md",
+      "target": "convex_readme_welcome_to_your_convex_functions_directory"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_readme_welcome_to_your_convex_next_js_clerk_app",
+      "target": "accounty_readme_get_started"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_readme_welcome_to_your_convex_next_js_clerk_app",
+      "target": "accounty_readme_learn_more"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_readme_welcome_to_your_convex_next_js_clerk_app",
+      "target": "accounty_readme_join_the_community"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_readme_get_started",
+      "target": "accounty_readme_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "accounty_readme_get_started",
+      "target": "accounty_readme_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/README.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_readme_welcome_to_your_convex_functions_directory",
+      "target": "convex_readme_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/README.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_readme_welcome_to_your_convex_functions_directory",
+      "target": "convex_readme_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/README.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_readme_welcome_to_your_convex_functions_directory",
+      "target": "convex_readme_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "convex_generated_ai_guidelines_md",
+      "target": "ai_guidelines_convex_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_convex_guidelines",
+      "target": "ai_guidelines_function_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L150",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_convex_guidelines",
+      "target": "ai_guidelines_schema_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_convex_guidelines",
+      "target": "ai_guidelines_authentication_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L199",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_convex_guidelines",
+      "target": "ai_guidelines_typescript_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L228",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_convex_guidelines",
+      "target": "ai_guidelines_full_text_search_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L239",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_convex_guidelines",
+      "target": "ai_guidelines_query_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L255",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_convex_guidelines",
+      "target": "ai_guidelines_mutation_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L260",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_convex_guidelines",
+      "target": "ai_guidelines_action_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L280",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_convex_guidelines",
+      "target": "ai_guidelines_scheduling_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L311",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_convex_guidelines",
+      "target": "ai_guidelines_testing_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L336",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_convex_guidelines",
+      "target": "ai_guidelines_file_storage_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_function_guidelines",
+      "target": "ai_guidelines_http_endpoint_syntax"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_function_guidelines",
+      "target": "ai_guidelines_validators"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_function_guidelines",
+      "target": "ai_guidelines_function_registration"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_function_guidelines",
+      "target": "ai_guidelines_function_calling"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_function_guidelines",
+      "target": "ai_guidelines_function_references"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_function_guidelines",
+      "target": "ai_guidelines_pagination"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_http_endpoint_syntax",
+      "target": "ai_guidelines_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_validators",
+      "target": "ai_guidelines_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_validators",
+      "target": "ai_guidelines_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_function_calling",
+      "target": "ai_guidelines_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_pagination",
+      "target": "ai_guidelines_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L165",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_authentication_guidelines",
+      "target": "ai_guidelines_codeblock_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L183",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_authentication_guidelines",
+      "target": "ai_guidelines_codeblock_7"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L206",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_typescript_guidelines",
+      "target": "ai_guidelines_codeblock_8"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L343",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_file_storage_guidelines",
+      "target": "ai_guidelines_codeblock_8"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L249",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_query_guidelines",
+      "target": "ai_guidelines_ordering"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L268",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_action_guidelines",
+      "target": "ai_guidelines_codeblock_9"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L282",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_scheduling_guidelines",
+      "target": "ai_guidelines_cron_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L288",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_cron_guidelines",
+      "target": "ai_guidelines_codeblock_10"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": "L317",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_guidelines_testing_guidelines",
+      "target": "ai_guidelines_codeblock_11"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "agents_convex",
+      "target": "convex_generated_ai_guidelines"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "convex_generated_ai_guidelines",
+      "target": "convex_http"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "convex_generated_ai_guidelines",
+      "target": "convex_schema"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "convex_generated_ai_guidelines",
+      "target": "convex_auth_config"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "convex_generated_ai_guidelines",
+      "target": "convex_generated_api"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "convex/_generated/ai/guidelines.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "convex_generated_ai_guidelines",
+      "target": "convex_generated_server"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme_clerk",
+      "target": "convex_auth_config"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "687dc9c0b4a1e65a157193017bb7a4eb61d5dc76"
+}
