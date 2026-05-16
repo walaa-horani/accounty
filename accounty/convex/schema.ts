@@ -17,5 +17,20 @@ export default defineSchema({
     slug: v.optional(v.string()),
     plan: v.union(v.literal("free_org"), v.literal("pro"), v.literal("business")),
     imageUrl: v.optional(v.string()),
-  }).index("by_clerk_org_id", ["clerkOrgId"]),
+    subscriptionId: v.optional(v.string()),
+    subscriptionStatus: v.optional(
+      v.union(
+        v.literal("active"),
+        v.literal("past_due"),
+        v.literal("canceled"),
+        v.literal("ended"),
+        v.literal("abandoned"),
+        v.literal("incomplete"),
+        v.literal("upcoming"),
+        v.literal("expired"),
+      ),
+    ),
+  })
+    .index("by_clerk_org_id", ["clerkOrgId"])
+    .index("by_subscription_id", ["subscriptionId"]),
 });

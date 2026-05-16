@@ -7,6 +7,23 @@ import { internal } from "./_generated/api";
 import type { WebhookEvent } from "@clerk/backend";
 import { Webhook } from "svix";
 
+const PLAN_SLUGS = new Set(["free_org", "pro", "business"]);
+
+type PlanSlug = "free_org" | "pro" | "business";
+type SubStatus =
+  | "active"
+  | "past_due"
+  | "canceled"
+  | "ended"
+  | "abandoned"
+  | "incomplete"
+  | "upcoming"
+  | "expired";
+
+function isValidPlanSlug(slug: string | undefined | null): slug is PlanSlug {
+  return !!slug && PLAN_SLUGS.has(slug);
+}
+
 const http = httpRouter();
 
 http.route({
@@ -40,6 +57,7 @@ http.route({
       return new Response("Invalid webhook signature", { status: 400 });
     }
 
+    // ── User events ──────────────────────────────────────────────────────────
     if (event.type === "user.created" || event.type === "user.updated") {
       const { data } = event;
       const primaryEmail = data.email_addresses.find(
@@ -60,6 +78,8 @@ http.route({
           clerkId: data.id,
         });
       }
+
+      // ── Organization events ────────────────────────────────────────────────
     } else if (
       event.type === "organization.created" ||
       event.type === "organization.updated"
@@ -78,6 +98,40 @@ http.route({
           clerkOrgId: data.id,
         });
       }
+
+      // ── Billing subscription events ────────────────────────────────────────
+    } else if (
+      event.type === "subscription.created" ||
+      event.type === "subscription.updated" ||
+      event.type === "subscription.active" ||
+      event.type === "subscription.pastDue"
+    ) {
+      const data = event.data as {
+        id: string;
+        status: SubStatus;
+        payer: { organization_id?: string };
+        items: Array<{ plan?: { slug?: string } | null }>;
+      };
+
+      const clerkOrgId = data.payer?.organization_id;
+      const planSlug = data.items?.[0]?.plan?.slug;
+
+      if (clerkOrgId && isValidPlanSlug(planSlug)) {
+        await ctx.runMutation(internal.billing.syncSubscription, {
+          clerkOrgId,
+          subscriptionId: data.id,
+          planSlug,
+          status: data.status,
+        });
+      }
+    } else if (
+      event.type === "subscription.ended" ||
+      event.type === "subscription.canceled"
+    ) {
+      const data = event.data as { id: string };
+      await ctx.runMutation(internal.billing.cancelSubscription, {
+        subscriptionId: data.id,
+      });
     }
 
     return new Response(null, { status: 200 });
