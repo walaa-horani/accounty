@@ -4,7 +4,12 @@
       "Read(//c/c/dev/accounty/accounty/**)",
       "Bash(pnpm list *)",
       "Bash(node -e \"const c = require\\('@clerk/nextjs'\\); console.log\\(Object.keys\\(c\\).filter\\(k => k.toLowerCase\\(\\).includes\\('webhook'\\) || k.toLowerCase\\(\\).includes\\('event'\\)\\)\\)\")",
-      "Bash(npm search *)"
+      "Bash(npm search *)",
+      "Bash(python -m graphify hook install)",
+      "Bash(pnpm dlx *)",
+      "Bash(ls lib/)",
+      "Bash(ls components/ui/)",
+      "Bash(python -m graphify update .)"
     ]
   }
 }
