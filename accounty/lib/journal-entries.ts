@@ -7,11 +7,13 @@ export type BalanceResult = {
   isBalanced: boolean;
 };
 
+const EPSILON = 0.001;
+
 export function calcBalance(lines: LineBalance[]): BalanceResult {
   const totalDebit = lines.reduce((s, l) => s + (l.debit || 0), 0);
   const totalCredit = lines.reduce((s, l) => s + (l.credit || 0), 0);
   const difference = Math.abs(totalDebit - totalCredit);
-  return { totalDebit, totalCredit, difference, isBalanced: difference === 0 };
+  return { totalDebit, totalCredit, difference, isBalanced: difference < EPSILON };
 }
 
 export function formatCurrency(amount: number): string {

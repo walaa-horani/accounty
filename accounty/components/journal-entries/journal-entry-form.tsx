@@ -44,7 +44,7 @@ const entrySchema = z.object({
     .superRefine((lines, ctx) => {
       const totalDebit = lines.reduce((s, l) => s + l.debit, 0);
       const totalCredit = lines.reduce((s, l) => s + l.credit, 0);
-      if (totalDebit !== totalCredit) {
+      if (Math.abs(totalDebit - totalCredit) > 0.001) {
         ctx.addIssue({
           code: "custom",
           path: [],
@@ -172,24 +172,31 @@ export function JournalEntryForm({ open, onClose }: JournalEntryFormProps) {
                 key={field.id}
                 className="grid grid-cols-[1fr_80px_80px_32px] gap-2 items-center"
               >
-                <Controller
-                  name={`lines.${index}.accountId`}
-                  control={control}
-                  render={({ field: f }) => (
-                    <Select value={f.value} onValueChange={f.onChange}>
-                      <SelectTrigger className="h-8 text-sm">
-                        <SelectValue placeholder="Select account" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {activeAccounts.map((a) => (
-                          <SelectItem key={a._id} value={a._id}>
-                            {a.number} — {a.name}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                <div className="min-w-0">
+                  <Controller
+                    name={`lines.${index}.accountId`}
+                    control={control}
+                    render={({ field: f }) => (
+                      <Select value={f.value} onValueChange={f.onChange}>
+                        <SelectTrigger className="h-8 text-sm" aria-label={`Account for line ${index + 1}`}>
+                          <SelectValue placeholder="Select account" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {activeAccounts.map((a) => (
+                            <SelectItem key={a._id} value={a._id}>
+                              {a.number} — {a.name}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    )}
+                  />
+                  {errors.lines?.[index]?.accountId && (
+                    <p className="text-xs text-destructive mt-0.5">
+                      {errors.lines[index].accountId.message}
+                    </p>
                   )}
-                />
+                </div>
                 <Input
                   type="number"
                   min={0}
@@ -215,6 +222,7 @@ export function JournalEntryForm({ open, onClose }: JournalEntryFormProps) {
                   variant="ghost"
                   size="icon"
                   className="size-8 text-muted-foreground"
+                  aria-label={`Remove line ${index + 1}`}
                   onClick={() => remove(index)}
                   disabled={fields.length <= 2}
                 >
