@@ -52,4 +52,31 @@ export default defineSchema({
     .index("by_org", ["orgId"])
     .index("by_org_type", ["orgId", "type"])
     .index("by_org_number", ["orgId", "number"]),
+  counters: defineTable({
+    orgId: v.string(),
+    name: v.string(),
+    value: v.number(),
+  }).index("by_org_name", ["orgId", "name"]),
+
+  journalEntries: defineTable({
+    orgId: v.string(),
+    reference: v.string(),
+    date: v.number(),
+    description: v.string(),
+    totalAmount: v.number(),
+    createdBy: v.string(),
+    createdAt: v.number(),
+  })
+    .index("by_org", ["orgId"])
+    .index("by_org_reference", ["orgId", "reference"]),
+
+  journalLines: defineTable({
+    entryId: v.id("journalEntries"),
+    orgId: v.string(),
+    accountId: v.id("accounts"),
+    debit: v.number(),
+    credit: v.number(),
+  })
+    .index("by_entry", ["entryId"])
+    .index("by_org", ["orgId"]),
 });
