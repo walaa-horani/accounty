@@ -9,6 +9,14 @@ export const ALL_ORG_ROLES: OrgRole[] = [
   "org:viewer",
 ];
 
+// Custom claims added to the Convex JWT template in the Clerk dashboard.
+// Must stay in sync with types/globals.d.ts and the JWT template configuration.
+interface OrgClaims {
+  org_id?: string;
+  org_role?: string;
+  org_slug?: string;
+}
+
 export async function requireAuth(ctx: QueryCtx | MutationCtx) {
   const identity = await ctx.auth.getUserIdentity();
   if (!identity) throw new Error("Not authenticated");
@@ -17,15 +25,9 @@ export async function requireAuth(ctx: QueryCtx | MutationCtx) {
 
 export async function requireOrgMember(ctx: QueryCtx | MutationCtx) {
   const identity = await requireAuth(ctx);
-  const raw = identity as Record<string, unknown>;
-
-  // Clerk v2 tokens nest org data under `o: { id, rol }`.
-  // Older JWT templates expose flat `org_id` / `org_role` — support both.
-  const nested = raw.o as { id?: string; rol?: string } | undefined;
-  const orgId = (raw.org_id as string | undefined) ?? nested?.id;
-  if (!orgId) throw new Error("No active organization");
-
-  return { identity, orgId };
+  const { org_id } = identity as typeof identity & OrgClaims;
+  if (!org_id) throw new Error("No active organization");
+  return { identity, orgId: org_id };
 }
 
 export async function requireRole(
@@ -33,15 +35,8 @@ export async function requireRole(
   allowedRoles: OrgRole[],
 ) {
   const { identity, orgId } = await requireOrgMember(ctx);
-  const raw = identity as Record<string, unknown>;
-
-  const nested = raw.o as { id?: string; rol?: string } | undefined;
-  const rawRole = (raw.org_role as string | undefined) ?? nested?.rol;
-  // Normalise "admin" → "org:admin" in case the token omits the prefix
-  const orgRole = rawRole
-    ? ((rawRole.startsWith("org:") ? rawRole : `org:${rawRole}`) as OrgRole)
-    : undefined;
-
+  const { org_role } = identity as typeof identity & OrgClaims;
+  const orgRole = org_role as OrgRole | undefined;
   if (!orgRole || !allowedRoles.includes(orgRole)) {
     throw new Error("Unauthorized");
   }
