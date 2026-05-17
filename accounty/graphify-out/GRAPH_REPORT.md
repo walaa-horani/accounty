@@ -1,16 +1,16 @@
-# Graph Report - accounty  (2026-05-16)
+# Graph Report - accounty  (2026-05-17)
 
 ## Corpus Check
-- 59 files · ~13,284 words
+- 59 files · ~13,334 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 402 nodes · 586 edges · 25 communities (23 shown, 2 thin omitted)
+- 403 nodes · 587 edges · 26 communities (24 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `209288f7`
+- Built from commit: `69d37c71`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -33,6 +33,7 @@
 - [[_COMMUNITY_Community 21|Community 21]]
 - [[_COMMUNITY_Community 22|Community 22]]
 - [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 25|Community 25]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 71 edges
@@ -58,7 +59,7 @@
 - `Avatar()` --calls--> `cn()`  [EXTRACTED]
   components/ui/avatar.tsx → lib/utils.ts
 
-## Communities (25 total, 2 thin omitted)
+## Communities (26 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -85,12 +86,12 @@ Cohesion: 0.15
 Nodes (11): code:block1 (npm install), code:block2 (npm create convex@latest -- -t nextjs-clerk), Get started, Join the community, Learn more, Welcome to your Convex + Next.js + Clerk app, code:ts (// convex/myFunctions.ts), code:ts (const data = useQuery(api.myFunctions.myQueryFunction, {) (+3 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.09
-Nodes (15): Home(), data, http, PLAN_SLUGS, PlanSlug, primaryEmail, SubStatus, svixId (+7 more)
+Cohesion: 0.08
+Nodes (16): Home(), data, http, PLAN_SLUGS, PlanSlug, primaryEmail, SubStatus, svixId (+8 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.06
-Nodes (34): dependencies, @base-ui/react, class-variance-authority, @clerk/nextjs, @clerk/react, clsx, convex, lucide-react (+26 more)
+Cohesion: 0.1
+Nodes (19): devDependencies, @convex-dev/eslint-plugin, eslint, eslint-config-next, prettier, tailwindcss, @tailwindcss/postcss, @types/node (+11 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.25
@@ -124,22 +125,26 @@ Nodes (21): aliases, components, hooks, lib, ui, utils, iconLibrary, menuAccent 
 Cohesion: 0.11
 Nodes (21): PLAN_LABELS, STATUS_CONFIG, Plan, PLAN_HIERARCHY, PlanGateProps, Plan, PLAN_LABELS, UpgradeBanner() (+13 more)
 
+### Community 25 - "Community 25"
+Cohesion: 0.13
+Nodes (15): dependencies, @base-ui/react, class-variance-authority, @clerk/nextjs, @clerk/react, clsx, convex, lucide-react (+7 more)
+
 ## Knowledge Gaps
-- **190 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+185 more)
+- **191 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+186 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `Community 5` to `Community 8`, `Community 23`?**
+- **Why does `cn()` connect `Community 5` to `Community 25`, `Community 23`?**
   _High betweenness centrality (0.230) - this node is a cross-community bridge._
-- **Why does `dependencies` connect `Community 8` to `Community 4`?**
+- **Why does `dependencies` connect `Community 25` to `Community 8`, `Community 4`?**
   _High betweenness centrality (0.164) - this node is a cross-community bridge._
-- **Why does `clsx` connect `Community 8` to `Community 5`?**
+- **Why does `clsx` connect `Community 25` to `Community 5`?**
   _High betweenness centrality (0.146) - this node is a cross-community bridge._
 - **What connects `$schema`, `style`, `rsc` to the rest of the system?**
-  _190 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _191 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

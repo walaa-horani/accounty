@@ -1,6 +1,5 @@
 import { v } from "convex/values";
 import { internalMutation, query } from "./_generated/server";
-import { requireOrgMember } from "./lib/withAuth";
 
 export const upsertFromClerk = internalMutation({
   args: {

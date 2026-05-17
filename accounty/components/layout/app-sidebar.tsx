@@ -77,19 +77,19 @@ export function AppSidebar() {
               {navItems.map((item) => (
                 <SidebarMenuItem key={item.href}>
                   <SidebarMenuButton
-                    asChild
                     isActive={pathname === item.href}
                     tooltip={item.title}
+                    render={
+                      <Link
+                        href={item.href}
+                        className={cn(
+                          pathname === item.href && "font-medium",
+                        )}
+                      />
+                    }
                   >
-                    <Link
-                      href={item.href}
-                      className={cn(
-                        pathname === item.href && "font-medium",
-                      )}
-                    >
-                      <item.icon className="size-4" />
-                      <span>{item.title}</span>
-                    </Link>
+                    <item.icon className="size-4" />
+                    <span>{item.title}</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
@@ -103,14 +103,12 @@ export function AppSidebar() {
               {bottomItems.map((item) => (
                 <SidebarMenuItem key={item.href}>
                   <SidebarMenuButton
-                    asChild
                     isActive={pathname === item.href}
                     tooltip={item.title}
+                    render={<Link href={item.href} />}
                   >
-                    <Link href={item.href}>
-                      <item.icon className="size-4" />
-                      <span>{item.title}</span>
-                    </Link>
+                    <item.icon className="size-4" />
+                    <span>{item.title}</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
