@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { useMutation } from "convex/react";
+import { useMutation, useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
 import {
@@ -44,6 +44,7 @@ const accountSchema = z.object({
     .max(250, "Description must be 250 characters or fewer.")
     .optional()
     .or(z.literal("")),
+  parentId: z.string().optional(),
 });
 
 type AccountFormValues = z.infer<typeof accountSchema>;
@@ -58,12 +59,15 @@ const ACCOUNT_TYPES = [
   { value: "expense", label: "Expense" },
 ] as const;
 
+const NONE = "__none__";
+
 interface Account {
   _id: Id<"accounts">;
   number: string;
   name: string;
   type: AccountFormValues["type"];
   description?: string;
+  parentId?: string;
 }
 
 interface AccountFormProps {
@@ -79,12 +83,15 @@ export function AccountForm({ open, onClose, editing }: AccountFormProps) {
   const update = useMutation(api.accounts.update);
   const isEditing = !!editing;
 
+  const accounts = useQuery(api.accounts.list);
+
   const {
     register,
     handleSubmit,
     control,
     reset,
     setError,
+    watch,
     formState: { errors, isSubmitting },
   } = useForm<AccountFormValues>({
     resolver: zodResolver(accountSchema),
@@ -93,8 +100,11 @@ export function AccountForm({ open, onClose, editing }: AccountFormProps) {
       name: "",
       type: "asset",
       description: "",
+      parentId: undefined,
     },
   });
+
+  const watchedType = watch("type");
 
   // Reset form values whenever the sheet opens or the editing target changes
   useEffect(() => {
@@ -104,6 +114,7 @@ export function AccountForm({ open, onClose, editing }: AccountFormProps) {
         name: editing?.name ?? "",
         type: editing?.type ?? "asset",
         description: editing?.description ?? "",
+        parentId: editing?.parentId ?? undefined,
       });
     }
   }, [open, editing, reset]);
@@ -111,14 +122,16 @@ export function AccountForm({ open, onClose, editing }: AccountFormProps) {
   async function onSubmit(values: AccountFormValues) {
     try {
       const description = values.description || undefined;
+      const parentId = values.parentId
+        ? (values.parentId as Id<"accounts">)
+        : undefined;
       if (isEditing) {
-        await update({ id: editing._id, ...values, description });
+        await update({ id: editing._id, ...values, description, parentId });
       } else {
-        await create({ ...values, description });
+        await create({ ...values, description, parentId });
       }
       onClose();
     } catch (err) {
-      // Surface server errors (e.g. duplicate account number) on the field
       const message = err instanceof Error ? err.message : "Something went wrong.";
       if (message.toLowerCase().includes("number")) {
         setError("number", { message });
@@ -188,6 +201,41 @@ export function AccountForm({ open, onClose, editing }: AccountFormProps) {
             {errors.name && (
               <p className="text-xs text-destructive">{errors.name.message}</p>
             )}
+          </div>
+
+          {/* Parent Account */}
+          <div className="space-y-1.5">
+            <Label htmlFor="parentId">
+              Parent Account{" "}
+              <span className="text-muted-foreground font-normal">(optional)</span>
+            </Label>
+            <Controller
+              name="parentId"
+              control={control}
+              render={({ field }) => {
+                const options = (accounts ?? []).filter(
+                  (a) => a.isActive && a.type === watchedType && a._id !== editing?._id,
+                );
+                return (
+                  <Select
+                    value={field.value ?? NONE}
+                    onValueChange={(v) => field.onChange(v === NONE ? undefined : v)}
+                  >
+                    <SelectTrigger id="parentId">
+                      <SelectValue placeholder="None (top-level)" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value={NONE}>None (top-level)</SelectItem>
+                      {options.map((a) => (
+                        <SelectItem key={a._id} value={a._id}>
+                          {a.number} — {a.name}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                );
+              }}
+            />
           </div>
 
           {/* Description */}
