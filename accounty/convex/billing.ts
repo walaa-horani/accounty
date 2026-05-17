@@ -1,6 +1,5 @@
 import { v } from "convex/values";
 import { internalMutation, query } from "./_generated/server";
-import { requireOrgMember } from "./lib/withAuth";
 
 const planValues = v.union(
   v.literal("free_org"),

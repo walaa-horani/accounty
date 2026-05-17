@@ -87,7 +87,7 @@ export function AccountForm({ open, onClose, editing }: AccountFormProps) {
     setError,
     formState: { errors, isSubmitting },
   } = useForm<AccountFormValues>({
-    resolver: zodResolver(accountSchema as any),
+    resolver: zodResolver(accountSchema),
     defaultValues: {
       number: "",
       name: "",

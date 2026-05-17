@@ -1,6 +1,6 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
-import { requireAnyOrgMember, requireEditor } from "./lib/withAuth";
+import { requireEditor } from "./lib/withAuth";
 
 const accountType = v.union(
   v.literal("asset"),
@@ -15,17 +15,29 @@ export const list = query({
   handler: async (ctx) => {
     const identity = await ctx.auth.getUserIdentity();
     if (!identity) return null;
-    const orgId = (identity as Record<string, unknown>).org_id as string | undefined;
+    const orgId = (identity as Record<string, unknown>).org_id as
+      | string
+      | undefined;
     if (!orgId) return null;
 
-    const accounts = await ctx.db
+    return await ctx.db
       .query("accounts")
       .withIndex("by_org", (q) => q.eq("orgId", orgId))
       .collect();
-
-    return accounts;
   },
 });
+
+async function validateParent(
+  ctx: Parameters<typeof requireEditor>[0],
+  parentId: string | undefined,
+  orgId: string,
+) {
+  if (!parentId) return;
+  const parent = await ctx.db.get(parentId as Parameters<typeof ctx.db.get>[0]);
+  if (!parent || (parent as { orgId?: string }).orgId !== orgId) {
+    throw new Error("Parent account not found or belongs to a different organization.");
+  }
+}
 
 export const create = mutation({
   args: {
@@ -44,8 +56,9 @@ export const create = mutation({
         q.eq("orgId", orgId).eq("number", args.number),
       )
       .unique();
-
     if (existing) throw new Error("Account number already exists.");
+
+    await validateParent(ctx, args.parentId, orgId);
 
     const normalBalance: "debit" | "credit" =
       args.type === "asset" || args.type === "expense" ? "debit" : "credit";
@@ -74,6 +87,7 @@ export const update = mutation({
   },
   handler: async (ctx, args) => {
     const { orgId } = await requireEditor(ctx);
+
     const account = await ctx.db.get(args.id);
     if (!account || account.orgId !== orgId) throw new Error("Not found.");
 
@@ -83,9 +97,10 @@ export const update = mutation({
         q.eq("orgId", orgId).eq("number", args.number),
       )
       .unique();
-
     if (duplicate && duplicate._id !== args.id)
       throw new Error("Account number already exists.");
+
+    await validateParent(ctx, args.parentId, orgId);
 
     const normalBalance: "debit" | "credit" =
       args.type === "asset" || args.type === "expense" ? "debit" : "credit";
