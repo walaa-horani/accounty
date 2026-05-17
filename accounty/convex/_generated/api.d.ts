@@ -11,10 +11,12 @@
 import type * as accounts from "../accounts.js";
 import type * as billing from "../billing.js";
 import type * as http from "../http.js";
+import type * as journalEntries from "../journalEntries.js";
 import type * as lib_planGate from "../lib/planGate.js";
 import type * as lib_withAuth from "../lib/withAuth.js";
 import type * as myFunctions from "../myFunctions.js";
 import type * as organizations from "../organizations.js";
+import type * as reports from "../reports.js";
 import type * as users from "../users.js";
 
 import type {
@@ -27,10 +29,12 @@ declare const fullApi: ApiFromModules<{
   accounts: typeof accounts;
   billing: typeof billing;
   http: typeof http;
+  journalEntries: typeof journalEntries;
   "lib/planGate": typeof lib_planGate;
   "lib/withAuth": typeof lib_withAuth;
   myFunctions: typeof myFunctions;
   organizations: typeof organizations;
+  reports: typeof reports;
   users: typeof users;
 }>;
 

@@ -23,7 +23,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
-import { Plus, X } from "lucide-react";
+import { Plus, Sparkles, X } from "lucide-react";
+import Link from "next/link";
 import { calcBalance, formatCurrency } from "@/lib/journal-entries";
 
 const lineSchema = z.object({
@@ -111,9 +112,10 @@ export function JournalEntryForm({ open, onClose }: JournalEntryFormProps) {
       });
       onClose();
     } catch (err) {
-      const message =
-        err instanceof Error ? err.message : "Something went wrong.";
-      setError("root", { message });
+      const raw = err instanceof Error ? err.message : "Something went wrong.";
+      const clean =
+        raw.match(/Uncaught Error: (.+?) at handler/)?.[1]?.trim() ?? raw;
+      setError("root", { message: clean });
     }
   }
 
@@ -271,9 +273,24 @@ export function JournalEntryForm({ open, onClose }: JournalEntryFormProps) {
             </div>
           )}
 
-          {errors.root && (
-            <p className="text-sm text-destructive">{errors.root.message}</p>
-          )}
+          {errors.root &&
+            (errors.root.message?.includes("Upgrade to create more") ? (
+              <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-amber-800 flex items-start gap-2">
+                <Sparkles className="size-4 shrink-0 mt-0.5 text-amber-500" />
+                <div>
+                  <p className="font-medium">Transaction limit reached</p>
+                  <p className="text-amber-700">{errors.root.message}</p>
+                  <Link
+                    href="/dashboard/settings/billing"
+                    className="font-medium underline hover:no-underline"
+                  >
+                    View plans &rarr;
+                  </Link>
+                </div>
+              </div>
+            ) : (
+              <p className="text-sm text-destructive">{errors.root.message}</p>
+            ))}
 
           <div className="flex gap-2 pt-2">
             <Button type="submit" disabled={!canSave} className="flex-1">

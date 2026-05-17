@@ -5,6 +5,12 @@ import {
   requireAnyOrgMember,
   requireRole,
 } from "./lib/withAuth";
+import { getOrgPlan } from "./lib/planGate";
+
+const TRANSACTION_LIMITS: Partial<Record<string, number>> = {
+  free_org: 1,
+  pro: 3,
+};
 
 export const list = query({
   args: {},
@@ -59,6 +65,20 @@ export const create = mutation({
   },
   handler: async (ctx, args) => {
     const { orgId, identity } = await requireEditor(ctx);
+
+    const plan = await getOrgPlan(ctx);
+    const limit = TRANSACTION_LIMITS[plan ?? "free_org"];
+    if (limit !== undefined) {
+      const existing = await ctx.db
+        .query("journalEntries")
+        .withIndex("by_org", (q) => q.eq("orgId", orgId))
+        .collect();
+      if (existing.length >= limit) {
+        throw new Error(
+          `Your ${plan === "pro" ? "Pro" : "Free"} plan allows up to ${limit} transaction${limit === 1 ? "" : "s"}. Upgrade to create more.`,
+        );
+      }
+    }
 
     if (args.lines.length < 2) throw new Error("At least 2 lines required.");
     const totalDebit = args.lines.reduce((s, l) => s + l.debit, 0);

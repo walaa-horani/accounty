@@ -28,9 +28,32 @@ const PLAN_SLUG_MAP: Record<string, PlanSlug> = {
   "business-plan": "business",
 };
 
+// Higher number = higher tier. Used to pick the "winning" plan when a
+// Clerk subscription contains multiple items (e.g. free_org + pro).
+const PLAN_PRIORITY: Record<PlanSlug, number> = {
+  free_org: 0,
+  pro: 1,
+  business: 2,
+};
+
 function mapPlanSlug(slug: string | undefined | null): PlanSlug | undefined {
   if (!slug) return undefined;
   return PLAN_SLUG_MAP[slug];
+}
+
+function pickBestPlanSlug(
+  items: Array<{ plan?: { slug?: string } | null }> | undefined,
+): PlanSlug | undefined {
+  let best: PlanSlug | undefined;
+  let bestRank = -1;
+  for (const item of items ?? []) {
+    const slug = mapPlanSlug(item.plan?.slug);
+    if (slug && PLAN_PRIORITY[slug] > bestRank) {
+      best = slug;
+      bestRank = PLAN_PRIORITY[slug];
+    }
+  }
+  return best;
 }
 
 const http = httpRouter();
@@ -126,7 +149,13 @@ http.route({
       };
 
       console.log("[billing webhook] event type:", event.type);
+      console.log("[billing webhook] subscriptionId:", data.id);
       console.log("[billing webhook] payer:", JSON.stringify(data.payer));
+      console.log("[billing webhook] items.length:", data.items?.length);
+      console.log(
+        "[billing webhook] item slugs:",
+        JSON.stringify(data.items?.map((it) => it.plan?.slug ?? null)),
+      );
       console.log("[billing webhook] items:", JSON.stringify(data.items));
       console.log("[billing webhook] status:", data.status);
 
@@ -142,9 +171,13 @@ http.route({
           subscriptionId: data.id,
         });
       } else {
-        const rawSlug = data.items?.[0]?.plan?.slug;
-        const planSlug = mapPlanSlug(rawSlug);
-        console.log("[billing webhook] clerkOrgId:", clerkOrgId, "rawSlug:", rawSlug, "→ planSlug:", planSlug);
+        const planSlug = pickBestPlanSlug(data.items);
+        console.log(
+          "[billing webhook] clerkOrgId:",
+          clerkOrgId,
+          "→ planSlug:",
+          planSlug,
+        );
         if (clerkOrgId && planSlug) {
           await ctx.runMutation(internal.billing.syncSubscription, {
             clerkOrgId,
@@ -153,7 +186,9 @@ http.route({
             status: data.status,
           });
         } else {
-          console.log("[billing webhook] skipped — clerkOrgId or planSlug missing/invalid");
+          console.log(
+            "[billing webhook] skipped — clerkOrgId or planSlug missing/invalid",
+          );
         }
       }
     }

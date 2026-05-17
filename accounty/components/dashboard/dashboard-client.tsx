@@ -179,6 +179,7 @@ export function DashboardClient({
             <CardContent className="space-y-2">
               <Button
                 variant="outline"
+                nativeButton={false}
                 className="w-full justify-start gap-2"
                 render={<Link href="/dashboard/accounts" />}
               >
@@ -187,6 +188,7 @@ export function DashboardClient({
               </Button>
               <Button
                 variant="outline"
+                nativeButton={false}
                 className="w-full justify-start gap-2"
                 render={<Link href="/dashboard/transactions" />}
               >
@@ -195,6 +197,7 @@ export function DashboardClient({
               </Button>
               <Button
                 variant="outline"
+                nativeButton={false}
                 className="w-full justify-start gap-2"
                 render={<Link href="/dashboard/settings/billing" />}
               >
