@@ -42,10 +42,11 @@ Multi-tenant double-entry accounting SaaS.
 - [ ] Schema — `journalEntries` + `journalLines` tables
 - [ ] Backend — `list`, `get`, `create`, `post`, `remove`
 - [ ] Balance validation — sum(debits) = sum(credits), min 2 lines
-- [ ] UI — entries list page (`/dashboard/transactions`)
-- [ ] UI — entry detail page (`/dashboard/transactions/[id]`)
-- [ ] Form — dynamic debit/credit line rows, live balance indicator
-- [ ] RBAC — editors create/post/delete, viewers read-only
+- [x] UI — entries list page (`/dashboard/transactions`)
+- [x] UI — entry detail page (`/dashboard/transactions/[id]`)
+- [x] Form — dynamic debit/credit line rows, live balance indicator
+- [x] RBAC — editors create/post/delete, viewers read-only
+- [x] **Performance — all dashboard pages converted to RSC with preloadQuery** (spec: `docs/superpowers/specs/2026-05-17-server-components-preloadquery-design.md`, plan: `docs/superpowers/plans/2026-05-17-server-components-preloadquery.md`)
 
 ### 📊 Phase 3 — Core Reports (branch: `feature/reports`)
 - [ ] Backend — `trialBalance`, `balanceSheet`, `incomeStatement` queries
