@@ -112,11 +112,20 @@ http.route({
       const data = event.data as {
         id: string;
         status: SubStatus;
-        payer: { organization_id?: string };
+        payer?: { id?: string; type?: string; organization_id?: string };
         items: Array<{ plan?: { slug?: string } | null }>;
       };
 
-      const clerkOrgId = data.payer?.organization_id;
+      console.log("[billing webhook] event type:", event.type);
+      console.log("[billing webhook] payer:", JSON.stringify(data.payer));
+      console.log("[billing webhook] items:", JSON.stringify(data.items));
+      console.log("[billing webhook] status:", data.status);
+
+      // Clerk v2 billing uses payer.id when payer.type === "org"
+      const clerkOrgId =
+        data.payer?.organization_id ??
+        (data.payer?.type === "org" ? data.payer?.id : undefined);
+
       const terminalStatuses: SubStatus[] = ["canceled", "ended", "expired", "abandoned"];
 
       if (clerkOrgId && terminalStatuses.includes(data.status)) {
@@ -125,6 +134,7 @@ http.route({
         });
       } else {
         const planSlug = data.items?.[0]?.plan?.slug;
+        console.log("[billing webhook] clerkOrgId:", clerkOrgId, "planSlug:", planSlug);
         if (clerkOrgId && isValidPlanSlug(planSlug)) {
           await ctx.runMutation(internal.billing.syncSubscription, {
             clerkOrgId,
@@ -132,6 +142,8 @@ http.route({
             planSlug,
             status: data.status,
           });
+        } else {
+          console.log("[billing webhook] skipped — clerkOrgId or planSlug missing/invalid");
         }
       }
     }
