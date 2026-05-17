@@ -83,10 +83,19 @@ journalLines    ← debit/credit lines per entry
 
 ---
 
+### 📄 Phase 4 — Recurring Invoices (branch: `feature/recurring-invoices`)
+- [x] Schema — `invoices` + `invoiceLines` tables with frequency, nextGenerationDate, parentInvoiceId
+- [x] Backend — `list`, `get`, `create`, `cancel` mutations/queries; `generateDueRecurring` internal mutation
+- [x] Cron — `convex/crons.ts` runs daily at UTC midnight, generates invoice instances from active recurring templates and advances `nextGenerationDate`
+- [ ] UI — invoices list page (`/dashboard/invoices`) with recurring badge
+- [ ] UI — invoice detail page (`/dashboard/invoices/[id]`)
+- [ ] Form — create/edit invoice with line items and recurrence settings (frequency, start/end date)
+- [ ] RBAC — editors create/cancel, viewers read-only
+
+---
+
 ## Out of Scope (MVP)
 
 - Bank reconciliation
-- Invoicing / accounts receivable
 - Multi-currency
-- Recurring journal entries
 - Audit log
