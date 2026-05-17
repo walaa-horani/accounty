@@ -25,6 +25,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Plus, Search, MoreHorizontal, Pencil, Archive, RotateCcw } from "lucide-react";
 import { useOrganization } from "@clerk/nextjs";
+import { buildHierarchy } from "@/lib/accounts";
 
 type AccountType = "asset" | "liability" | "equity" | "income" | "expense";
 
@@ -54,6 +55,7 @@ interface Account {
   normalBalance: "debit" | "credit";
   description?: string;
   isActive: boolean;
+  parentId?: string;
 }
 
 export default function AccountsPage() {
@@ -162,7 +164,7 @@ export default function AccountsPage() {
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    {rows.map((account) => (
+                    {buildHierarchy(rows).map(({ account, depth }) => (
                       <TableRow
                         key={account._id}
                         className={!account.isActive ? "opacity-50" : ""}
@@ -171,7 +173,15 @@ export default function AccountsPage() {
                           {account.number}
                         </TableCell>
                         <TableCell>
-                          <span className="font-medium">{account.name}</span>
+                          <span
+                            className="font-medium"
+                            style={{ paddingLeft: depth * 16 }}
+                          >
+                            {depth > 0 && (
+                              <span className="text-muted-foreground mr-1">↳</span>
+                            )}
+                            {account.name}
+                          </span>
                           {!account.isActive && (
                             <Badge variant="secondary" className="ml-2 text-xs">
                               Inactive
@@ -195,7 +205,7 @@ export default function AccountsPage() {
                                 <MoreHorizontal className="size-4" />
                               </DropdownMenuTrigger>
                               <DropdownMenuContent align="end">
-                                <DropdownMenuItem onClick={() => openEdit(account as Account)}>
+                                <DropdownMenuItem onClick={() => openEdit(account)}>
                                   <Pencil className="size-4 mr-2" />
                                   Edit
                                 </DropdownMenuItem>
