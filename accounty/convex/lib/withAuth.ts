@@ -9,12 +9,14 @@ export const ALL_ORG_ROLES: OrgRole[] = [
   "org:viewer",
 ];
 
-// Custom claims added to the Convex JWT template in the Clerk dashboard.
-// Must stay in sync with types/globals.d.ts and the JWT template configuration.
+// Custom claims from the Clerk JWT template named "convex".
+// org_id / org_role come from the template; o.id / o.rol are the Clerk v2
+// native fallback present when the template hasn't been configured yet.
 interface OrgClaims {
   org_id?: string;
   org_role?: string;
   org_slug?: string;
+  o?: { id?: string; rol?: string; slg?: string };
 }
 
 export async function requireAuth(ctx: QueryCtx | MutationCtx) {
@@ -25,9 +27,10 @@ export async function requireAuth(ctx: QueryCtx | MutationCtx) {
 
 export async function requireOrgMember(ctx: QueryCtx | MutationCtx) {
   const identity = await requireAuth(ctx);
-  const { org_id } = identity as typeof identity & OrgClaims;
-  if (!org_id) throw new Error("No active organization");
-  return { identity, orgId: org_id };
+  const claims = identity as typeof identity & OrgClaims;
+  const orgId = claims.org_id ?? claims.o?.id;
+  if (!orgId) throw new Error("No active organization");
+  return { identity, orgId };
 }
 
 export async function requireRole(
@@ -35,8 +38,12 @@ export async function requireRole(
   allowedRoles: OrgRole[],
 ) {
   const { identity, orgId } = await requireOrgMember(ctx);
-  const { org_role } = identity as typeof identity & OrgClaims;
-  const orgRole = org_role as OrgRole | undefined;
+  const claims = identity as typeof identity & OrgClaims;
+  const rawRole = claims.org_role ?? claims.o?.rol;
+  // Normalise "admin" → "org:admin" for Clerk v2 native tokens
+  const orgRole = rawRole
+    ? ((rawRole.startsWith("org:") ? rawRole : `org:${rawRole}`) as OrgRole)
+    : undefined;
   if (!orgRole || !allowedRoles.includes(orgRole)) {
     throw new Error("Unauthorized");
   }
