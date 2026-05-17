@@ -1,13 +1,18 @@
 {
+  "C:\\dev\\accounty\\accounty\\components.json": {
+    "mtime": 1778965065.1675587,
+    "ast_hash": "02016e740b7b0e6a3b00a3441ac0bda7",
+    "semantic_hash": ""
+  },
   "C:\\dev\\accounty\\accounty\\eslint.config.mjs": {
     "mtime": 1778877185.0,
     "ast_hash": "13acc7103302ecb0361130192cb22520",
     "semantic_hash": "13acc7103302ecb0361130192cb22520"
   },
   "C:\\dev\\accounty\\accounty\\next-env.d.ts": {
-    "mtime": 1778927396.290594,
-    "ast_hash": "b698cdd97fe8e3bd16dcd74899ad7cef",
-    "semantic_hash": "b698cdd97fe8e3bd16dcd74899ad7cef"
+    "mtime": 1778961957.2202048,
+    "ast_hash": "29f60a376e12bf72b67d4994fcc84214",
+    "semantic_hash": ""
   },
   "C:\\dev\\accounty\\accounty\\next.config.ts": {
     "mtime": 1778877185.0,
@@ -15,9 +20,9 @@
     "semantic_hash": "9b77af189a21a7a64e4bd7a426f64176"
   },
   "C:\\dev\\accounty\\accounty\\package.json": {
-    "mtime": 1778932000.7867126,
-    "ast_hash": "6f9f8c47ccbec03cc573b17adbb42e87",
-    "semantic_hash": "6f9f8c47ccbec03cc573b17adbb42e87"
+    "mtime": 1778965065.2074943,
+    "ast_hash": "76364be232585fd16d5b4a8a01b716fa",
+    "semantic_hash": ""
   },
   "C:\\dev\\accounty\\accounty\\postcss.config.mjs": {
     "mtime": 1778877185.0,
@@ -40,14 +45,39 @@
     "semantic_hash": "7831df54b0184c9a88a681bd02b3e9e4"
   },
   "C:\\dev\\accounty\\accounty\\app\\layout.tsx": {
-    "mtime": 1778927154.3390696,
-    "ast_hash": "61c98c3b16c3e0138ad80c05ad904a46",
-    "semantic_hash": "61c98c3b16c3e0138ad80c05ad904a46"
+    "mtime": 1778965065.1630304,
+    "ast_hash": "2478b534dccb531a3717863a544c5971",
+    "semantic_hash": ""
   },
   "C:\\dev\\accounty\\accounty\\app\\page.tsx": {
-    "mtime": 1778927300.9091938,
-    "ast_hash": "931ee87c2662dceb9ab2ffff3772de92",
-    "semantic_hash": "931ee87c2662dceb9ab2ffff3772de92"
+    "mtime": 1778965065.1665483,
+    "ast_hash": "902588d49df77aa60363f39f8da2319f",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\app\\dashboard\\layout.tsx": {
+    "mtime": 1778965065.1557748,
+    "ast_hash": "a69f5d321c2a4f0e0478a2d17b820694",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\app\\dashboard\\page.tsx": {
+    "mtime": 1778965065.1572855,
+    "ast_hash": "cc070645cfb0ddc8d40ced11e1481c4a",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\app\\dashboard\\settings\\page.tsx": {
+    "mtime": 1778965065.1608198,
+    "ast_hash": "719567c587f35655b90f66af369346a9",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\app\\dashboard\\settings\\billing\\page.tsx": {
+    "mtime": 1778965065.1598115,
+    "ast_hash": "c58c94fa537b9fafbae99bdc71dea970",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\app\\onboarding\\page.tsx": {
+    "mtime": 1778965065.1640396,
+    "ast_hash": "1a7546e2fe819a530d82169f9db65fdf",
+    "semantic_hash": ""
   },
   "C:\\dev\\accounty\\accounty\\app\\server\\inner.tsx": {
     "mtime": 1778877185.0,
@@ -74,25 +104,110 @@
     "ast_hash": "b36e3857e970ba14122b1860582b0ded",
     "semantic_hash": "b36e3857e970ba14122b1860582b0ded"
   },
+  "C:\\dev\\accounty\\accounty\\components\\billing\\plan-gate.tsx": {
+    "mtime": 1778965065.169068,
+    "ast_hash": "5a855e398eb5cba7ffa07dd6f28d4c8d",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\billing\\upgrade-banner.tsx": {
+    "mtime": 1778965065.1700795,
+    "ast_hash": "6c3ae4a8cacd56edda7df0dba735d076",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\layout\\app-sidebar.tsx": {
+    "mtime": 1778965065.1705897,
+    "ast_hash": "d771a21aa0d9d5bd52af1fd1e04c8af9",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\layout\\top-bar.tsx": {
+    "mtime": 1778965065.1716,
+    "ast_hash": "cfd6ba407d9a9697791c6c73a70a7049",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\ui\\avatar.tsx": {
+    "mtime": 1778965065.1731114,
+    "ast_hash": "027beea3f5aab3ffb39aaf085cb78f95",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\ui\\badge.tsx": {
+    "mtime": 1778965065.1738071,
+    "ast_hash": "1ff3e04a7fd408f9bd7520187dce5d19",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\ui\\button.tsx": {
+    "mtime": 1778965065.175328,
+    "ast_hash": "fa7dc9bec92a2ea0344e2a5c4738514f",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\ui\\card.tsx": {
+    "mtime": 1778965065.1763384,
+    "ast_hash": "8ce8ba8f46073af348bcd6751b909682",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\ui\\dropdown-menu.tsx": {
+    "mtime": 1778965065.1763384,
+    "ast_hash": "89728fd5784555d58a9ad1c72b6a803d",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\ui\\input.tsx": {
+    "mtime": 1778965065.1778462,
+    "ast_hash": "da33823853390b57ac04230a67657585",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\ui\\separator.tsx": {
+    "mtime": 1778965065.179383,
+    "ast_hash": "bb51ace4279e49d0a4628fafa6ea10b9",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\ui\\sheet.tsx": {
+    "mtime": 1778965065.1803963,
+    "ast_hash": "16cbe3e1f0a47862d4035756c6b16b64",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\ui\\sidebar.tsx": {
+    "mtime": 1778965065.1813948,
+    "ast_hash": "b2bd586e9fa59e58a92716be476be6d2",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\ui\\skeleton.tsx": {
+    "mtime": 1778965065.1823957,
+    "ast_hash": "58a45c5aceb0b4cb1c16d06758ea16d6",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\components\\ui\\tooltip.tsx": {
+    "mtime": 1778965065.1829042,
+    "ast_hash": "498f1fcb6267150c8026b8e17a400607",
+    "semantic_hash": ""
+  },
   "C:\\dev\\accounty\\accounty\\convex\\auth.config.ts": {
     "mtime": 1778931313.1923678,
     "ast_hash": "991736468e7daf1aaaefd7342e106c79",
     "semantic_hash": "991736468e7daf1aaaefd7342e106c79"
   },
+  "C:\\dev\\accounty\\accounty\\convex\\billing.ts": {
+    "mtime": 1778965065.1897612,
+    "ast_hash": "399515c271f55dc5112889631676e071",
+    "semantic_hash": ""
+  },
   "C:\\dev\\accounty\\accounty\\convex\\http.ts": {
-    "mtime": 1778933730.651927,
-    "ast_hash": "45099e92c7f8cf726791ead7ea63d6bd",
-    "semantic_hash": "45099e92c7f8cf726791ead7ea63d6bd"
+    "mtime": 1778965065.1915672,
+    "ast_hash": "2cd1e77929a16b8888ec76262c3aba58",
+    "semantic_hash": ""
   },
   "C:\\dev\\accounty\\accounty\\convex\\myFunctions.ts": {
     "mtime": 1778877185.0,
     "ast_hash": "8880634d1e983b782f2604ed53d2d0b1",
     "semantic_hash": "8880634d1e983b782f2604ed53d2d0b1"
   },
+  "C:\\dev\\accounty\\accounty\\convex\\organizations.ts": {
+    "mtime": 1778965065.1951604,
+    "ast_hash": "70b25dbebe64f5b16361b16ab1877008",
+    "semantic_hash": ""
+  },
   "C:\\dev\\accounty\\accounty\\convex\\schema.ts": {
-    "mtime": 1778931825.887845,
-    "ast_hash": "5e4d1ba2f9807ddcef16caedf8d26367",
-    "semantic_hash": "5e4d1ba2f9807ddcef16caedf8d26367"
+    "mtime": 1778965065.1971743,
+    "ast_hash": "39e43604ed8673e7f488de41f24b1a54",
+    "semantic_hash": ""
   },
   "C:\\dev\\accounty\\accounty\\convex\\tsconfig.json": {
     "mtime": 1778877185.0,
@@ -104,10 +219,20 @@
     "ast_hash": "a2da7b5afcce9899273651c0e0d2ecd9",
     "semantic_hash": "a2da7b5afcce9899273651c0e0d2ecd9"
   },
+  "C:\\dev\\accounty\\accounty\\convex\\lib\\planGate.ts": {
+    "mtime": 1778965065.1941235,
+    "ast_hash": "8264c7e077c995eea6b10af5c9929b09",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\convex\\lib\\withAuth.ts": {
+    "mtime": 1778965065.1951604,
+    "ast_hash": "ecee02a992668bc9b03985c88b03a950",
+    "semantic_hash": ""
+  },
   "C:\\dev\\accounty\\accounty\\convex\\_generated\\api.d.ts": {
-    "mtime": 1778932866.963063,
-    "ast_hash": "6cd519c2ee062b541a4be95885fdd03e",
-    "semantic_hash": "6cd519c2ee062b541a4be95885fdd03e"
+    "mtime": 1778965065.1882555,
+    "ast_hash": "b3a850344e1af14c43296cd2ec4451a7",
+    "semantic_hash": ""
   },
   "C:\\dev\\accounty\\accounty\\convex\\_generated\\api.js": {
     "mtime": 1778877185.0,
@@ -134,6 +259,16 @@
     "ast_hash": "97d44bd0941ba52a0d8f07c29f943bb1",
     "semantic_hash": "97d44bd0941ba52a0d8f07c29f943bb1"
   },
+  "C:\\dev\\accounty\\accounty\\hooks\\use-mobile.ts": {
+    "mtime": 1778965065.2053657,
+    "ast_hash": "654e2ca2e9fddc27eb7e3954900dc48e",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\lib\\utils.ts": {
+    "mtime": 1778965065.2063751,
+    "ast_hash": "e3f848f1b39f863e6164cf58b5a8e752",
+    "semantic_hash": ""
+  },
   "C:\\dev\\accounty\\accounty\\AGENTS.md": {
     "mtime": 1778926462.78393,
     "ast_hash": "34281e9ffd842238948717ac9c01f392",
@@ -145,9 +280,14 @@
     "semantic_hash": "34281e9ffd842238948717ac9c01f392"
   },
   "C:\\dev\\accounty\\accounty\\pnpm-workspace.yaml": {
-    "mtime": 1778927007.5904305,
-    "ast_hash": "e4636c719788d6162677e982dd762a20",
-    "semantic_hash": "e4636c719788d6162677e982dd762a20"
+    "mtime": 1778965065.2130535,
+    "ast_hash": "64ffef10d15461255a6a11e914f4c1f0",
+    "semantic_hash": ""
+  },
+  "C:\\dev\\accounty\\accounty\\prompt.txt": {
+    "mtime": 1778944272.0908053,
+    "ast_hash": "37430e5b6b897ab824d8190f55484a72",
+    "semantic_hash": ""
   },
   "C:\\dev\\accounty\\accounty\\README.md": {
     "mtime": 1778877185.0,

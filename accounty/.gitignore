@@ -42,3 +42,6 @@ next-env.d.ts
 
 # clerk configuration (can include secrets)
 /.clerk/
+
+# graphify cache (auto-generated, large)
+graphify-out/cache/
