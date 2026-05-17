@@ -1,5 +1,6 @@
 import { v } from "convex/values";
 import { internalMutation, query } from "./_generated/server";
+import { requireAnyOrgMember } from "./lib/withAuth";
 
 const planValues = v.union(
   v.literal("free_org"),
@@ -65,12 +66,7 @@ export const cancelSubscription = internalMutation({
 export const getOrgBilling = query({
   args: {},
   handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return null;
-    const orgId = (identity as Record<string, unknown>).org_id as
-      | string
-      | undefined;
-    if (!orgId) return null;
+    const { orgId } = await requireAnyOrgMember(ctx);
     const org = await ctx.db
       .query("organizations")
       .withIndex("by_clerk_org_id", (q) => q.eq("clerkOrgId", orgId))
