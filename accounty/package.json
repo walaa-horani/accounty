@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
+    "@clerk/backend": "^1.26.0",
     "@clerk/nextjs": "^7.3.4",
     "@clerk/react": "^6.6.4",
     "@hookform/resolvers": "^3.10.0",
