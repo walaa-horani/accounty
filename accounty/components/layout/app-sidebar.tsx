@@ -9,6 +9,7 @@ import {
   BarChart3,
   Settings,
   Receipt,
+  Users,
 } from "lucide-react";
 import {
   Sidebar,
@@ -48,6 +49,7 @@ const navItems = [
 ];
 
 const bottomItems = [
+  { title: "Members", href: "/dashboard/settings/members", icon: Users },
   { title: "Settings", href: "/dashboard/settings", icon: Settings },
 ];
 
