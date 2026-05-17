@@ -61,7 +61,8 @@ http.route({
     if (event.type === "user.created" || event.type === "user.updated") {
       const { data } = event;
       const primaryEmail = data.email_addresses.find(
-        (e) => e.id === data.primary_email_address_id,
+        (e: { id: string; email_address: string }) =>
+          e.id === data.primary_email_address_id,
       );
       await ctx.runMutation(internal.users.upsertFromClerk, {
         clerkId: data.id,

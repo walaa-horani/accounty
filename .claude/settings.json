@@ -9,7 +9,21 @@
       "Bash(pnpm dlx *)",
       "Bash(ls lib/)",
       "Bash(ls components/ui/)",
-      "Bash(python -m graphify update .)"
+      "Bash(python -m graphify update .)",
+      "Bash(pnpm typecheck *)",
+      "Bash(pnpm install *)",
+      "Bash(git -C c:/dev/accounty log -3 --stat)",
+      "Bash(pnpm view *)",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(npx eslint *)",
+      "Bash(git -C c:/dev/accounty status)",
+      "Bash(git -C c:/dev/accounty diff accounty/package.json)",
+      "Bash(git -C c:/dev/accounty add accounty/package.json accounty/pnpm-lock.yaml)",
+      "Bash(git -C c:/dev/accounty commit -m ' *)",
+      "Bash(git -C c:/dev/accounty push)",
+      "Bash(git -C c:/dev/accounty push --set-upstream origin feature/chart-of-accounts)",
+      "Bash(git -C c:/dev/accounty diff .claude/settings.json)",
+      "Bash(git -C c:/dev/accounty add .claude/settings.json accounty/graphify-out/ graphify-out/)"
     ]
   }
 }
