@@ -7,8 +7,6 @@ import { internal } from "./_generated/api";
 import type { WebhookEvent } from "@clerk/backend";
 import { Webhook } from "svix";
 
-const PLAN_SLUGS = new Set(["free_org", "pro", "business"]);
-
 type PlanSlug = "free_org" | "pro" | "business";
 type SubStatus =
   | "active"
@@ -20,8 +18,42 @@ type SubStatus =
   | "upcoming"
   | "expired";
 
-function isValidPlanSlug(slug: string | undefined | null): slug is PlanSlug {
-  return !!slug && PLAN_SLUGS.has(slug);
+// Maps Clerk plan slugs → internal plan values.
+// Add entries here if Clerk uses different slug naming.
+const PLAN_SLUG_MAP: Record<string, PlanSlug> = {
+  free_org: "free_org",
+  pro: "pro",
+  "pro-plan": "pro",
+  business: "business",
+  "business-plan": "business",
+};
+
+// Higher number = higher tier. Used to pick the "winning" plan when a
+// Clerk subscription contains multiple items (e.g. free_org + pro).
+const PLAN_PRIORITY: Record<PlanSlug, number> = {
+  free_org: 0,
+  pro: 1,
+  business: 2,
+};
+
+function mapPlanSlug(slug: string | undefined | null): PlanSlug | undefined {
+  if (!slug) return undefined;
+  return PLAN_SLUG_MAP[slug];
+}
+
+function pickBestPlanSlug(
+  items: Array<{ plan?: { slug?: string } | null }> | undefined,
+): PlanSlug | undefined {
+  let best: PlanSlug | undefined;
+  let bestRank = -1;
+  for (const item of items ?? []) {
+    const slug = mapPlanSlug(item.plan?.slug);
+    if (slug && PLAN_PRIORITY[slug] > bestRank) {
+      best = slug;
+      bestRank = PLAN_PRIORITY[slug];
+    }
+  }
+  return best;
 }
 
 const http = httpRouter();
@@ -112,26 +144,51 @@ http.route({
       const data = event.data as {
         id: string;
         status: SubStatus;
-        payer: { organization_id?: string };
+        payer?: { id?: string; type?: string; organization_id?: string };
         items: Array<{ plan?: { slug?: string } | null }>;
       };
 
-      const clerkOrgId = data.payer?.organization_id;
+      console.log("[billing webhook] event type:", event.type);
+      console.log("[billing webhook] subscriptionId:", data.id);
+      console.log("[billing webhook] payer:", JSON.stringify(data.payer));
+      console.log("[billing webhook] items.length:", data.items?.length);
+      console.log(
+        "[billing webhook] item slugs:",
+        JSON.stringify(data.items?.map((it) => it.plan?.slug ?? null)),
+      );
+      console.log("[billing webhook] items:", JSON.stringify(data.items));
+      console.log("[billing webhook] status:", data.status);
+
+      // Clerk v2 billing uses payer.id when payer.type === "org"
+      const clerkOrgId =
+        data.payer?.organization_id ??
+        (data.payer?.type === "org" ? data.payer?.id : undefined);
+
       const terminalStatuses: SubStatus[] = ["canceled", "ended", "expired", "abandoned"];
 
-      if (clerkOrgId && terminalStatuses.includes(data.status)) {
+      if (terminalStatuses.includes(data.status)) {
         await ctx.runMutation(internal.billing.cancelSubscription, {
           subscriptionId: data.id,
         });
       } else {
-        const planSlug = data.items?.[0]?.plan?.slug;
-        if (clerkOrgId && isValidPlanSlug(planSlug)) {
+        const planSlug = pickBestPlanSlug(data.items);
+        console.log(
+          "[billing webhook] clerkOrgId:",
+          clerkOrgId,
+          "→ planSlug:",
+          planSlug,
+        );
+        if (clerkOrgId && planSlug) {
           await ctx.runMutation(internal.billing.syncSubscription, {
             clerkOrgId,
             subscriptionId: data.id,
             planSlug,
             status: data.status,
           });
+        } else {
+          console.log(
+            "[billing webhook] skipped — clerkOrgId or planSlug missing/invalid",
+          );
         }
       }
     }

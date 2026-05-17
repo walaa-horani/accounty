@@ -1,6 +1,6 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
-import { requireEditor } from "./lib/withAuth";
+import { requireEditor, requireAnyOrgMember } from "./lib/withAuth";
 
 const accountType = v.union(
   v.literal("asset"),
@@ -13,13 +13,7 @@ const accountType = v.union(
 export const list = query({
   args: {},
   handler: async (ctx) => {
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity) return null;
-    const orgId = (identity as Record<string, unknown>).org_id as
-      | string
-      | undefined;
-    if (!orgId) return null;
-
+    const { orgId } = await requireAnyOrgMember(ctx);
     return await ctx.db
       .query("accounts")
       .withIndex("by_org", (q) => q.eq("orgId", orgId))
