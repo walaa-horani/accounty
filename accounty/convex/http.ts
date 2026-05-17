@@ -166,7 +166,7 @@ http.route({
 
       const terminalStatuses: SubStatus[] = ["canceled", "ended", "expired", "abandoned"];
 
-      if (clerkOrgId && terminalStatuses.includes(data.status)) {
+      if (terminalStatuses.includes(data.status)) {
         await ctx.runMutation(internal.billing.cancelSubscription, {
           subscriptionId: data.id,
         });
