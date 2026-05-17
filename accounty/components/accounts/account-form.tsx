@@ -37,7 +37,7 @@ const accountSchema = z.object({
     .min(2, "Name must be at least 2 characters.")
     .max(100, "Name must be 100 characters or fewer."),
   type: z.enum(["asset", "liability", "equity", "income", "expense"], {
-    message: "Please select an account type.",
+    errorMap: () => ({ message: "Please select an account type." }),
   }),
   description: z
     .string()
