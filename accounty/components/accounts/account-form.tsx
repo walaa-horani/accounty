@@ -1,6 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect } from "react";
+import { useForm, Controller } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
@@ -21,6 +24,32 @@ import {
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 
+// ── Zod schema ────────────────────────────────────────────────────────────────
+
+const accountSchema = z.object({
+  number: z
+    .string()
+    .min(1, "Account number is required.")
+    .max(20, "Account number must be 20 characters or fewer.")
+    .regex(/^\d+$/, "Account number must contain digits only."),
+  name: z
+    .string()
+    .min(2, "Name must be at least 2 characters.")
+    .max(100, "Name must be 100 characters or fewer."),
+  type: z.enum(["asset", "liability", "equity", "income", "expense"], {
+    required_error: "Please select an account type.",
+  }),
+  description: z
+    .string()
+    .max(250, "Description must be 250 characters or fewer.")
+    .optional()
+    .or(z.literal("")),
+});
+
+type AccountFormValues = z.infer<typeof accountSchema>;
+
+// ── Types ─────────────────────────────────────────────────────────────────────
+
 const ACCOUNT_TYPES = [
   { value: "asset", label: "Asset" },
   { value: "liability", label: "Liability" },
@@ -29,13 +58,11 @@ const ACCOUNT_TYPES = [
   { value: "expense", label: "Expense" },
 ] as const;
 
-type AccountType = (typeof ACCOUNT_TYPES)[number]["value"];
-
 interface Account {
   _id: Id<"accounts">;
   number: string;
   name: string;
-  type: AccountType;
+  type: AccountFormValues["type"];
   description?: string;
 }
 
@@ -45,34 +72,59 @@ interface AccountFormProps {
   editing?: Account | null;
 }
 
+// ── Component ─────────────────────────────────────────────────────────────────
+
 export function AccountForm({ open, onClose, editing }: AccountFormProps) {
   const create = useMutation(api.accounts.create);
   const update = useMutation(api.accounts.update);
-
-  const [number, setNumber] = useState(editing?.number ?? "");
-  const [name, setName] = useState(editing?.name ?? "");
-  const [type, setType] = useState<AccountType>(editing?.type ?? "asset");
-  const [description, setDescription] = useState(editing?.description ?? "");
-  const [error, setError] = useState("");
-  const [saving, setSaving] = useState(false);
-
   const isEditing = !!editing;
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setError("");
-    setSaving(true);
+  const {
+    register,
+    handleSubmit,
+    control,
+    reset,
+    setError,
+    formState: { errors, isSubmitting },
+  } = useForm<AccountFormValues>({
+    resolver: zodResolver(accountSchema),
+    defaultValues: {
+      number: "",
+      name: "",
+      type: "asset",
+      description: "",
+    },
+  });
+
+  // Reset form values whenever the sheet opens or the editing target changes
+  useEffect(() => {
+    if (open) {
+      reset({
+        number: editing?.number ?? "",
+        name: editing?.name ?? "",
+        type: editing?.type ?? "asset",
+        description: editing?.description ?? "",
+      });
+    }
+  }, [open, editing, reset]);
+
+  async function onSubmit(values: AccountFormValues) {
     try {
+      const description = values.description || undefined;
       if (isEditing) {
-        await update({ id: editing._id, number, name, type, description: description || undefined });
+        await update({ id: editing._id, ...values, description });
       } else {
-        await create({ number, name, type, description: description || undefined });
+        await create({ ...values, description });
       }
       onClose();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Something went wrong.");
-    } finally {
-      setSaving(false);
+      // Surface server errors (e.g. duplicate account number) on the field
+      const message = err instanceof Error ? err.message : "Something went wrong.";
+      if (message.toLowerCase().includes("number")) {
+        setError("number", { message });
+      } else {
+        setError("root", { message });
+      }
     }
   }
 
@@ -82,61 +134,90 @@ export function AccountForm({ open, onClose, editing }: AccountFormProps) {
         <SheetHeader>
           <SheetTitle>{isEditing ? "Edit Account" : "New Account"}</SheetTitle>
         </SheetHeader>
-        <form onSubmit={handleSubmit} className="mt-6 space-y-4 px-1">
+
+        <form onSubmit={handleSubmit(onSubmit)} className="mt-6 space-y-4 px-1">
           <div className="grid grid-cols-2 gap-4">
+            {/* Account number */}
             <div className="space-y-1.5">
               <Label htmlFor="number">Account No.</Label>
               <Input
                 id="number"
-                value={number}
-                onChange={(e) => setNumber(e.target.value)}
                 placeholder="1000"
-                required
+                {...register("number")}
               />
+              {errors.number && (
+                <p className="text-xs text-destructive">{errors.number.message}</p>
+              )}
             </div>
+
+            {/* Type */}
             <div className="space-y-1.5">
               <Label htmlFor="type">Type</Label>
-              <Select value={type} onValueChange={(v) => setType(v as AccountType)}>
-                <SelectTrigger id="type">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  {ACCOUNT_TYPES.map((t) => (
-                    <SelectItem key={t.value} value={t.value}>
-                      {t.label}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+              <Controller
+                name="type"
+                control={control}
+                render={({ field }) => (
+                  <Select value={field.value} onValueChange={field.onChange}>
+                    <SelectTrigger id="type">
+                      <SelectValue placeholder="Select type" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {ACCOUNT_TYPES.map((t) => (
+                        <SelectItem key={t.value} value={t.value}>
+                          {t.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                )}
+              />
+              {errors.type && (
+                <p className="text-xs text-destructive">{errors.type.message}</p>
+              )}
             </div>
           </div>
 
+          {/* Name */}
           <div className="space-y-1.5">
             <Label htmlFor="name">Name</Label>
             <Input
               id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
               placeholder="Cash and Cash Equivalents"
-              required
+              {...register("name")}
             />
+            {errors.name && (
+              <p className="text-xs text-destructive">{errors.name.message}</p>
+            )}
           </div>
 
+          {/* Description */}
           <div className="space-y-1.5">
-            <Label htmlFor="description">Description (optional)</Label>
+            <Label htmlFor="description">
+              Description{" "}
+              <span className="text-muted-foreground font-normal">(optional)</span>
+            </Label>
             <Input
               id="description"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
               placeholder="Short description"
+              {...register("description")}
             />
+            {errors.description && (
+              <p className="text-xs text-destructive">{errors.description.message}</p>
+            )}
           </div>
 
-          {error && <p className="text-sm text-destructive">{error}</p>}
+          {/* Root / server error */}
+          {errors.root && (
+            <p className="text-sm text-destructive">{errors.root.message}</p>
+          )}
 
           <div className="flex gap-2 pt-2">
-            <Button type="submit" disabled={saving} className="flex-1">
-              {saving ? "Saving…" : isEditing ? "Save Changes" : "Create Account"}
+            <Button type="submit" disabled={isSubmitting} className="flex-1">
+              {isSubmitting
+                ? "Saving…"
+                : isEditing
+                  ? "Save Changes"
+                  : "Create Account"}
             </Button>
             <Button type="button" variant="outline" onClick={onClose}>
               Cancel
