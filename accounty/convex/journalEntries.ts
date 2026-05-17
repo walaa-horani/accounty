@@ -14,7 +14,7 @@ export const list = query({
       .query("journalEntries")
       .withIndex("by_org", (q) => q.eq("orgId", orgId))
       .order("desc")
-      .take(100);
+      .take(100); // pagination deferred to Phase 3 — cap at 100 for MVP
   },
 });
 
@@ -63,7 +63,8 @@ export const create = mutation({
     if (args.lines.length < 2) throw new Error("At least 2 lines required.");
     const totalDebit = args.lines.reduce((s, l) => s + l.debit, 0);
     const totalCredit = args.lines.reduce((s, l) => s + l.credit, 0);
-    if (totalDebit !== totalCredit) throw new Error("Debits must equal credits.");
+    if (Math.abs(totalDebit - totalCredit) > 0.001)
+      throw new Error("Debits must equal credits.");
     if (totalDebit === 0) throw new Error("Entry amount cannot be zero.");
 
     const counter = await ctx.db
