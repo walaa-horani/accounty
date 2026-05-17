@@ -17,11 +17,14 @@ export async function requireAuth(ctx: QueryCtx | MutationCtx) {
 
 export async function requireOrgMember(ctx: QueryCtx | MutationCtx) {
   const identity = await requireAuth(ctx);
-  // Clerk includes org_id in the JWT when the user has an active organization
-  const orgId = (identity as Record<string, unknown>).org_id as
-    | string
-    | undefined;
+  const raw = identity as Record<string, unknown>;
+
+  // Clerk v2 tokens nest org data under `o: { id, rol }`.
+  // Older JWT templates expose flat `org_id` / `org_role` — support both.
+  const nested = raw.o as { id?: string; rol?: string } | undefined;
+  const orgId = (raw.org_id as string | undefined) ?? nested?.id;
   if (!orgId) throw new Error("No active organization");
+
   return { identity, orgId };
 }
 
@@ -30,9 +33,15 @@ export async function requireRole(
   allowedRoles: OrgRole[],
 ) {
   const { identity, orgId } = await requireOrgMember(ctx);
-  const orgRole = (identity as Record<string, unknown>).org_role as
-    | OrgRole
-    | undefined;
+  const raw = identity as Record<string, unknown>;
+
+  const nested = raw.o as { id?: string; rol?: string } | undefined;
+  const rawRole = (raw.org_role as string | undefined) ?? nested?.rol;
+  // Normalise "admin" → "org:admin" in case the token omits the prefix
+  const orgRole = rawRole
+    ? ((rawRole.startsWith("org:") ? rawRole : `org:${rawRole}`) as OrgRole)
+    : undefined;
+
   if (!orgRole || !allowedRoles.includes(orgRole)) {
     throw new Error("Unauthorized");
   }
