@@ -35,8 +35,8 @@ Multi-tenant double-entry accounting SaaS.
 - [x] Backend — `list`, `create`, `update`, `archive`, `restore`
 - [x] UI — grouped table by type, search, archive/restore, RBAC guards
 - [x] Form — create/edit sheet with Zod validation
-- [ ] **Parent account field in form** ← next task
-- [ ] **Indented hierarchy in table**
+- [x] **Parent account field in form**
+- [x] **Indented hierarchy in table**
 
 ### 📋 Phase 2 — Journal Entries (branch: `feature/journal-entries`)
 - [ ] Schema — `journalEntries` + `journalLines` tables
