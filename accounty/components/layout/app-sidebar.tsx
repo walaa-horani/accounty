@@ -9,6 +9,8 @@ import {
   BarChart3,
   Settings,
   Receipt,
+  Users,
+  FileText,
 } from "lucide-react";
 import {
   Sidebar,
@@ -43,11 +45,13 @@ const navItems = [
   { title: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
   { title: "Transactions", href: "/dashboard/transactions", icon: ArrowLeftRight },
   { title: "Chart of Accounts", href: "/dashboard/accounts", icon: BookOpen },
+  { title: "Invoices", href: "/dashboard/invoices", icon: FileText },
   { title: "Reports", href: "/dashboard/reports", icon: BarChart3, requiredPlan: "pro" as Plan },
   { title: "Receipt Scanner", href: "/dashboard/receipts", icon: Receipt, requiredPlan: "business" as Plan },
 ];
 
 const bottomItems = [
+  { title: "Members", href: "/dashboard/settings/members", icon: Users },
   { title: "Settings", href: "/dashboard/settings", icon: Settings },
 ];
 

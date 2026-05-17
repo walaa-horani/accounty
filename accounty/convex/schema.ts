@@ -79,4 +79,50 @@ export default defineSchema({
   })
     .index("by_entry", ["entryId"])
     .index("by_org", ["orgId"]),
+
+  invoices: defineTable({
+    orgId: v.string(),
+    customerName: v.string(),
+    customerEmail: v.optional(v.string()),
+    description: v.string(),
+    totalAmount: v.number(),
+    status: v.union(
+      v.literal("draft"),
+      v.literal("active"),
+      v.literal("paused"),
+      v.literal("canceled"),
+    ),
+    // Recurring configuration
+    isRecurring: v.boolean(),
+    frequency: v.optional(
+      v.union(
+        v.literal("daily"),
+        v.literal("weekly"),
+        v.literal("monthly"),
+        v.literal("yearly"),
+      ),
+    ),
+    startDate: v.number(),
+    endDate: v.optional(v.number()),
+    nextGenerationDate: v.optional(v.number()),
+    lastGeneratedAt: v.optional(v.number()),
+    // Set on generated instances to link back to the recurring template
+    parentInvoiceId: v.optional(v.id("invoices")),
+    createdBy: v.string(),
+    createdAt: v.number(),
+  })
+    .index("by_org", ["orgId"])
+    .index("by_org_status", ["orgId", "status"])
+    .index("by_isRecurring_nextGenerationDate", ["isRecurring", "nextGenerationDate"]),
+
+  invoiceLines: defineTable({
+    invoiceId: v.id("invoices"),
+    orgId: v.string(),
+    description: v.string(),
+    quantity: v.number(),
+    unitPrice: v.number(),
+    amount: v.number(),
+  })
+    .index("by_invoice", ["invoiceId"])
+    .index("by_org", ["orgId"]),
 });

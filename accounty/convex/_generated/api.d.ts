@@ -10,7 +10,9 @@
 
 import type * as accounts from "../accounts.js";
 import type * as billing from "../billing.js";
+import type * as crons from "../crons.js";
 import type * as http from "../http.js";
+import type * as invoices from "../invoices.js";
 import type * as journalEntries from "../journalEntries.js";
 import type * as lib_planGate from "../lib/planGate.js";
 import type * as lib_withAuth from "../lib/withAuth.js";
@@ -28,7 +30,9 @@ import type {
 declare const fullApi: ApiFromModules<{
   accounts: typeof accounts;
   billing: typeof billing;
+  crons: typeof crons;
   http: typeof http;
+  invoices: typeof invoices;
   journalEntries: typeof journalEntries;
   "lib/planGate": typeof lib_planGate;
   "lib/withAuth": typeof lib_withAuth;
