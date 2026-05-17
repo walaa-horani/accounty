@@ -37,7 +37,7 @@ const accountSchema = z.object({
     .min(2, "Name must be at least 2 characters.")
     .max(100, "Name must be 100 characters or fewer."),
   type: z.enum(["asset", "liability", "equity", "income", "expense"], {
-    required_error: "Please select an account type.",
+    message: "Please select an account type.",
   }),
   description: z
     .string()
@@ -87,7 +87,7 @@ export function AccountForm({ open, onClose, editing }: AccountFormProps) {
     setError,
     formState: { errors, isSubmitting },
   } = useForm<AccountFormValues>({
-    resolver: zodResolver(accountSchema),
+    resolver: zodResolver(accountSchema as any),
     defaultValues: {
       number: "",
       name: "",
