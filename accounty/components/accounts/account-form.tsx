@@ -222,7 +222,13 @@ export function AccountForm({ open, onClose, editing }: AccountFormProps) {
                     onValueChange={(v) => field.onChange(v === NONE ? undefined : v)}
                   >
                     <SelectTrigger id="parentId">
-                      <SelectValue placeholder="None (top-level)" />
+                      <SelectValue placeholder="None (top-level)">
+                        {(() => {
+                          if (!field.value || field.value === NONE) return undefined;
+                          const acct = options.find((a) => a._id === field.value);
+                          return acct ? `${acct.number} — ${acct.name}` : undefined;
+                        })()}
+                      </SelectValue>
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value={NONE}>None (top-level)</SelectItem>

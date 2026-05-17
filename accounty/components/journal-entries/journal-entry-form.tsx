@@ -179,7 +179,12 @@ export function JournalEntryForm({ open, onClose }: JournalEntryFormProps) {
                     render={({ field: f }) => (
                       <Select value={f.value} onValueChange={f.onChange}>
                         <SelectTrigger className="h-8 text-sm" aria-label={`Account for line ${index + 1}`}>
-                          <SelectValue placeholder="Select account" />
+                          <SelectValue placeholder="Select account">
+                            {(() => {
+                              const acct = activeAccounts.find((a) => a._id === f.value);
+                              return acct ? `${acct.number} — ${acct.name}` : undefined;
+                            })()}
+                          </SelectValue>
                         </SelectTrigger>
                         <SelectContent>
                           {activeAccounts.map((a) => (
