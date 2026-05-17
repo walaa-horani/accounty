@@ -46,8 +46,8 @@ export function DashboardClient({
   const now = new Date();
   const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1).getTime();
 
-  const activeAccounts = accounts?.filter((a) => a.isActive).length ?? 0;
-  const thisMonthEntries = entries?.filter((e) => e.date >= startOfMonth) ?? [];
+  const activeAccounts = accounts.filter((a) => a.isActive).length;
+  const thisMonthEntries = entries.filter((e) => e.date >= startOfMonth);
   const totalVolume = thisMonthEntries.reduce((s, e) => s + e.totalAmount, 0);
 
   const plan = billing?.plan ?? "free_org";
