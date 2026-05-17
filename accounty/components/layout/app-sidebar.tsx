@@ -24,7 +24,16 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
+import { useQuery } from "convex/react";
+import { api } from "@/convex/_generated/api";
+import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+
+const PLAN_LABELS: Record<string, string> = {
+  free_org: "Free",
+  pro: "Pro",
+  business: "Business",
+};
 
 const navItems = [
   { title: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
@@ -40,6 +49,8 @@ const bottomItems = [
 
 export function AppSidebar() {
   const pathname = usePathname();
+  const billing = useQuery(api.billing.getOrgBilling);
+  const plan = billing?.plan ?? "free_org";
 
   return (
     <Sidebar collapsible="icon">
@@ -66,19 +77,19 @@ export function AppSidebar() {
               {navItems.map((item) => (
                 <SidebarMenuItem key={item.href}>
                   <SidebarMenuButton
-                    asChild
                     isActive={pathname === item.href}
                     tooltip={item.title}
+                    render={
+                      <Link
+                        href={item.href}
+                        className={cn(
+                          pathname === item.href && "font-medium",
+                        )}
+                      />
+                    }
                   >
-                    <Link
-                      href={item.href}
-                      className={cn(
-                        pathname === item.href && "font-medium",
-                      )}
-                    >
-                      <item.icon className="size-4" />
-                      <span>{item.title}</span>
-                    </Link>
+                    <item.icon className="size-4" />
+                    <span>{item.title}</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
@@ -92,14 +103,12 @@ export function AppSidebar() {
               {bottomItems.map((item) => (
                 <SidebarMenuItem key={item.href}>
                   <SidebarMenuButton
-                    asChild
                     isActive={pathname === item.href}
                     tooltip={item.title}
+                    render={<Link href={item.href} />}
                   >
-                    <Link href={item.href}>
-                      <item.icon className="size-4" />
-                      <span>{item.title}</span>
-                    </Link>
+                    <item.icon className="size-4" />
+                    <span>{item.title}</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
@@ -108,7 +117,17 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
 
-      <SidebarFooter className="border-t border-sidebar-border p-3">
+      <SidebarFooter className="border-t border-sidebar-border p-3 space-y-2">
+        <div className="group-data-[collapsible=icon]:hidden">
+          <Link href="/dashboard/settings/billing">
+            <Badge
+              variant={plan === "business" ? "default" : "secondary"}
+              className="w-full justify-center cursor-pointer hover:opacity-80 transition-opacity"
+            >
+              {PLAN_LABELS[plan] ?? plan} Plan
+            </Badge>
+          </Link>
+        </div>
         <div className="flex items-center gap-2">
           <UserButton
             appearance={{
