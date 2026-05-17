@@ -7,8 +7,6 @@ import { internal } from "./_generated/api";
 import type { WebhookEvent } from "@clerk/backend";
 import { Webhook } from "svix";
 
-const PLAN_SLUGS = new Set(["free_org", "pro", "business"]);
-
 type PlanSlug = "free_org" | "pro" | "business";
 type SubStatus =
   | "active"
@@ -20,8 +18,19 @@ type SubStatus =
   | "upcoming"
   | "expired";
 
-function isValidPlanSlug(slug: string | undefined | null): slug is PlanSlug {
-  return !!slug && PLAN_SLUGS.has(slug);
+// Maps Clerk plan slugs → internal plan values.
+// Add entries here if Clerk uses different slug naming.
+const PLAN_SLUG_MAP: Record<string, PlanSlug> = {
+  free_org: "free_org",
+  pro: "pro",
+  "pro-plan": "pro",
+  business: "business",
+  "business-plan": "business",
+};
+
+function mapPlanSlug(slug: string | undefined | null): PlanSlug | undefined {
+  if (!slug) return undefined;
+  return PLAN_SLUG_MAP[slug];
 }
 
 const http = httpRouter();
@@ -133,9 +142,10 @@ http.route({
           subscriptionId: data.id,
         });
       } else {
-        const planSlug = data.items?.[0]?.plan?.slug;
-        console.log("[billing webhook] clerkOrgId:", clerkOrgId, "planSlug:", planSlug);
-        if (clerkOrgId && isValidPlanSlug(planSlug)) {
+        const rawSlug = data.items?.[0]?.plan?.slug;
+        const planSlug = mapPlanSlug(rawSlug);
+        console.log("[billing webhook] clerkOrgId:", clerkOrgId, "rawSlug:", rawSlug, "→ planSlug:", planSlug);
+        if (clerkOrgId && planSlug) {
           await ctx.runMutation(internal.billing.syncSubscription, {
             clerkOrgId,
             subscriptionId: data.id,
